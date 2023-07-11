@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}:root{
+    --gris: #f6f6f4;
+    --cafe: #8c522c;
+    --verde: #4b6246;
+    --blanco: #ffffff;
+    --negro: #000000;
+    --fuenteTitulo:'League Spartan', sans-serif;
+    --fuenteCuerpo: 'Roboto', sans-serif;
+
+}
+
+html {
+    box-sizing: border-box;
+    /*hace que el border, el padding no afecte el ancho de los elementos*/
+    font-size: 62.5%;
+    /*convierte 1 rem a 10 px*/
+    
+}
+
+/*GENERALES*/
+h1 {
+    font-family: var(--fuenteTitulo);
+}
+h2 {
+    font-family: var(--fuenteTitulo);
+}
+h3 {
+    font-family: var(--fuenteTitulo);
+}
+
+
+p {
+    font-family: var(--fuenteCuerpo);
+}
+a{
+    font-family: var(--fuenteTitulo);
+}
+
+.titulo{
+    color: var(--verde);
+    text-align: center;
+    font-size: 4rem;
+    padding: 3rem;
+}
+
+    /*HEADER*/
+.bar{
+    background-color: var(--gris);
+}
+.bar a{
+    margin-right: 2rem;
+    font-size: 2rem;
+    color: var(--verde);
+    font-weight: bold;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+ 
+}
+
+.logo {
+    width: 12rem;
+    height: auto;
+    padding-left: 2rem;
+}
+
+
+.navegacion-enlace{
+    text-decoration: none;
+   
+}
+.list{
+    list-style-type: none;
+}
+
+/*MAIN*/
+/*PAGINA PRINCIPAL*/
+/* foto principal y frase*/
+.bg{
+  background-image: url(../assets/img/bayas-cafe-1-scaled.jpg);
+  background-attachment: fixed; 
+  background-size:cover; 
+  background-repeat: no-repeat;
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+ 
+}
+.text-overlay{
+    padding: 4rem;
+    text-align: center;
+    font-size:5rem;
+    color: var(--blanco);
+}
+/*espacios, productos destacados y opiniones  */
+.subtitulos h2{
+    background-color: var(--cafe);
+    font-size: 4rem;
+    color: var(--blanco);
+    text-align:center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    opacity: 0.5;
+}
+
+.opinions{
+    display: flex;
+    padding: 3rem;
+    
+   
+}
+.opinions-body{
+    width: 30%;
+    margin: 1.5rem;
+    
+    
+}
+.opinions-body p{
+    
+    color: var(--negro);
+    padding: 1.5rem;
+    text-align: left;
+    font-size: 1.5rem;
+    margin-left: 4rem;
+    text-align: justify;
+    font-weight: 400;
+    
+}
+.opinions-body h3{
+    font-size: 2rem;
+    color: var(--verde);
+    margin-left: 2rem;
+ 
+}
+
+.img-nombre{
+    display: flex;
+}
+.opinions-body img{
+    width: 6rem;
+    height: auto;
+    display: block;
+    
+      
+}
+
+/*CONTACTO*/
+
+.contacto-bg{
+    background-image: url(../assets/img/contacto.jpg);
+    height: 30rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 10rem;
+    margin-right: 10rem;
+} 
+.formulario {
+    background-color: var(--blanco);
+    margin: -5rem auto 0 auto;
+    width: 50%;
+    padding: 5rem;
+}
+
+.campo {
+    display: flex;
+    margin-bottom: 2rem;
+    text-align: right;
+    
+
+}
+ .campo-label {
+    font-size: 1.5rem;
+    flex: 0 0 9rem;
+    padding-right: 2rem;
+ }
+
+ .campo-field {
+     font-size: 1.5rem;   
+     flex: 1;
+
+ }
+
+ .campo-field-textarea{
+     height: 20rem;
+
+ }
+ .boton {
+    display: block;
+    font-family: var(--fuenteTitulo);
+    color: var(--verde);
+    text-align: center;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    border: none;
+}
+ .boton-primario {
+    background-color: var(--gris);
+    padding: 1rem;
+
+}
+.boton:hover{
+    cursor: pointer;
+}
+
+
+
+/*FOOTER*/
+.container-footer{
+    background-color: var(--gris);
+    color: var(--verde);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-left:  2rem;
+    padding-right:  2rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+.container-footer h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+ 
+}
+.container-footer p{
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: 4rem;
+
+}
+.container-footer a{
+    font-size: 1rem;
+    color: var(--verde);
+    font-weight: bold;
+}
+.icon{
+    color: var(--verde);
+
+}
