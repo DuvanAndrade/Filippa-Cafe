@@ -10,31 +10,54 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;800&family=Roboto:wght@300;400&display=swap" rel="stylesheet"/>
 
-    <!-- #region enlazando css-->
+    
+    <!--Enlazando boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- Importando carrusel-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <!--FIN-->
+
+
+    <!--  enlazando css-->
     <link rel="stylesheet" href="css/style.css" />
 
     <title>Filippa Café</title>
   </head>
   <body>
-    <header class="header bar">
-      <a href="index.html">
-        <img class="logo" src="assets/img/logo.png" alt="logo" />
-      </a>
-      <nav class="navegacion">
-        <a href="index.html" class="navegacion-enlace">Inicio</a>
-        <a href="pages/cafeteria.html" class="navegacion-enlace">Cafeteria</a>
-        <a href="pages/pasteleria.html" class="navegacion-enlace">Pasteleria</a>
-        <a href="pages/cursosCatas.html" class="navegacion-enlace">Cursos y Catas</a>
-        <a href="pages/contacto.html" class="navegacion-enlace">Contacto</a>
+    <header>
+
+      <nav class="navbar bg-nav-personalizado navbar-expand-sm m-0  ">
+        <div class="container-fluid">
+          <a  href="index.html">
+            <img class="logo ps-3" src="../assets/img/logo.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <!--ver como hacer para que d-flex justify-content-end no me afecte a las hora de abrir la hamburquesa-->
+            <div class="offcanvas-body d-flex justify-content-end pe-3 ">
+              <ul class="navbar-nav bar ps-5 grid gap-4 ">
+                <li><a class="nav-link " href="index.html">Inicio</a></li>
+                <li><a class="nav-link" href="pages/cafeteria.html">Cafeteria</a></li>
+                <li><a class="nav-link" href="pages/pasteleria.html">Pasteleria</a></li>
+                <li><a class="nav-link" href="pages/cursosCatas.html">Cursos y Catas</a></li>
+                <li><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
       </nav>
-
-      
-    </header>
-
+  
+      </header>
+<!-- <div class="marca-agua">-->
     <main>
       <!--IMAGEN PRINCIPAL Y FRASE-->
       <section class="bg">
-        <div class="text-overlay">
+        <div class="text-overlay frase-principal">
           <h1>NO ES SOLO UN CAFÉ</h1>
           <h2>ES TODA UNA EXPERIENCIA</h2>
         </div>
@@ -44,22 +67,137 @@
       <section class="subtitulos">
         <h2>Descubre nuestros espacios</h2>
 
+        <!--INICIO  DEL CARRUSEL DE ESPACIOS -->
+
+        <div class="container">
+          <br>
+          <div id="theCarousel" class="carousel slide " data-ride="carousel">
+            <!-- Indicadores -->
+            <ol class="carousel-indicators">
+              <li data-target="#theCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#theCarousel" data-slide-to="1"></li>
+              <li data-target="#theCarousel" data-slide-to="2"></li>
+              <li data-target="#theCarousel" data-slide-to="3"></li>
+              
+            </ol>
+        
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="assets/img/local/barra.jpg" alt="" > 
+                 <div class="carousel-caption d-none d-md-block">
+            <h3>Nuesta Barra</h3>
+            <p>Contamos con lo mejor del mercado para ofrecer el mejor servicio.</p>
+          </div>
+              </div>
+        
+             
+            
+              <div class="item">
+                <img src="assets/img/local/patio.jpg" alt="" > 
+                 <div class="carousel-caption d-none d-md-block">
+            <h3> Patio Bonito</h3>
+            <p>Rodeate e inspirate de la naturaleza.</p>
+          </div>
+              </div>
+        
+             <div class="item">
+                <img src="assets/img/local/salon_principal.jpg" alt="" >
+                 <div class="carousel-caption d-none d-md-block">
+            <h3>Nuestro Salon principal</h3>
+            <p>Espacios llenos de amor y comodidad.</p>
+          </div>
+              </div>
+               <div class="item">
+                <img src="assets/img/local/terraza.jpg" alt="" > 
+                 <div class="carousel-caption d-none d-md-block">
+            <h3>Y el Top. Nuestra bella terraza</h3>
+            <p>ven a disfrutar de un rico café acompañado de nuesta hermosa vista.</p>
+          </div>
+              </div>
+        
+        
+            <a class="left carousel-control" href="#theCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">anterior</span>
+            </a>
+            <a class="right carousel-control" href="#theCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">siguiente</span>
+            </a>
+          </div>
+        </div>
+        </div>
+
+        <!--FIN DEL CARRUSEL DE ESPACIOS-->
+
       </section>
 
       <!--PRODUCTOS DESTACADOSs-->
       <section class="subtitulos">
         <h2>Productos destacados</h2>
+        <!--INICIO  DEL CARRUSEL DE PRODUCTOS DESTACADOS -->
+
+
+        <div class="container">
+          <br>
+          <div id="theCarousel-productos" class="carousel slide " data-ride="carousel">
+            <!-- Indicadores -->
+            <ol class="carousel-indicators">
+              <li data-target="#theCarousel-productos" data-slide-to="0" class="active"></li>
+              <li data-target="#theCarousel-productos" data-slide-to="1"></li>
+              <li data-target="#theCarousel-productos" data-slide-to="2"></li>
+              <li data-target="#theCarousel-productos" data-slide-to="3"></li>
+              
+            </ol>
+        
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="assets/img/pasteleria/carrotCake.jpg" alt="" > 
+                 <div class="carousel-caption d-none d-md-block"></div>
+              </div>
+            
+              <div class="item">
+                <img src="assets/img/pasteleria/rainbow.jpg" alt="" > 
+                 <div class="carousel-caption d-none d-md-block"></div>
+              </div>
+        
+             <div class="item">
+                <img src="assets/img/pasteleria/matilda.jpg" alt="" >
+                 <div class="carousel-caption d-none d-md-block"></div>
+              </div>
+
+               <div class="item">
+                <img src="assets/img/pasteleria/cheesCake.jpg" alt="" > 
+                 <div class="carousel-caption d-none d-md-block"></div>
+              </div>
+        
+        
+            <a class="left carousel-control" href="#theCarousel-productos" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">anterior</span>
+            </a>
+            <a class="right carousel-control" href="#theCarousel-productos" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">siguiente</span>
+            </a>
+          </div>
+        </div>
+        </div>
+        
         
 
         
+
+        <!--FIN DEL CARRUSEL DE PRODUCTOS DESTACADOS-->
+        
       </section>
+      
       <!--OPINIONES-->
       <!--NOTA: ESTO SE CAMBIARIA LUEGO POR OPINIONES REALES DE GOOGLE OPNIONS-->
       <section class="subtitulos">
-        <h2>Las opiniones de nuestros clientes</h2>
-
-      
-      <section class="opinions">
+         <h2>Las opiniones de nuestros clientes</h2>
+        
+        <section class="opinions">
           <article class="opinions-body">
             <div class="img-nombre">
                 <img  src="assets/img/user.webp" alt="">
@@ -113,35 +251,36 @@
           </p>
           </article>
         </section>
+      
+        
       </section>
     </main>
-
+ <!--</div> marca-agua--> 
     <footer class="container-footer">
       <section>
-        <h2>NAVEGACIÓN</h2>
-        <ul class="list">
-          <li><a href="index.html" class="navegacion-enlace">Inicio</a></li>
-          <li><a href="pages/cafeteria.html" class="navegacion-enlace">Cafeteria</a></li>
-          <li><a href="pages/pasteleria.html" class="navegacion-enlace">Pasteleria</a></li>
-          <li><a href="pages/cursosCatas.html" class="navegacion-enlace">Cursos y Catas</a></li>
-          <li><a href="pages/contacto.html" class="navegacion-enlace">Contacto</a></li>
-        </ul>
+        <div class="navegacion-footer">
+          <h2>NAVEGACIÓN</h2>
+          <ul class="list">
+            <li><a href="index.html" class="navegacion-enlace">Inicio</a></li>
+            <li><a href="pages/cafeteria.html" class="navegacion-enlace">Cafeteria</a></li>
+            <li><a href="pages/pasteleria.html" class="navegacion-enlace">Pasteleria</a></li>
+            <li><a href="pages/cursosCatas.html" class="navegacion-enlace">Cursos y Catas</a></li>
+            <li><a href="pages/contacto.html" class="navegacion-enlace">Contacto</a></li>
+          </ul>
+        </div>
       </section>
 
       <section>
-
-            <!--ICONO DE LOCALIZACION-->
-            <a href="https://goo.gl/maps/5MdRns7Fa7QZX7LS8"></a>
-        <h2> <svg   xmlns="http://www.w3.org/2000/svg"  width="30"  height="30" fill="currentColor" class="bi bi-geo-alt-fill"
-            viewBox="0 0 16 16"><path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>
-            SUCURSALES</h2>
-        <p>Av Córdoba 1111</p>
-        <p>Tel: 4859672</p>
-       </div>
+        <div class="sucursales">
+          <h2> SUCURSALES</h2>
+          <p>Av Córdoba 1111</p>
+          <p>Tel: 4859672</p>
+        </div>
       </section>
 
       <section>
-        <h2>SEGUINOS</h2>
+        <h2>SEGUINOS</h2> 
+          
         <!--ICONO INSTAGRAM-->
         <svg
           class="icon"
@@ -163,7 +302,12 @@
           class="bi bi-facebook"
           viewBox="0 0 16 16">
           <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/></svg>
-      </section>
+        </section>
     </footer>
+    <!--Script boostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>
 </html>

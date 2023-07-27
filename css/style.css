@@ -1,87 +1,75 @@
 *{
     margin: 0;
     padding: 0;
-
-}:root{
+    box-sizing: border-box;
+    /*hace que el border, el padding no afecte el ancho de los elementos*/
+}
+:root{
     --gris: #f6f6f4;
     --cafe: #8c522c;
+    --cafeSecundario: #ccab95;
     --verde: #4b6246;
     --blanco: #ffffff;
     --negro: #000000;
     --fuenteTitulo:'League Spartan', sans-serif;
     --fuenteCuerpo: 'Roboto', sans-serif;
+    --bs-border-color: #4b6246;
 
 }
 
 html {
-    box-sizing: border-box;
-    /*hace que el border, el padding no afecte el ancho de los elementos*/
+    
     font-size: 62.5%;
     /*convierte 1 rem a 10 px*/
-    
 }
 
 /*GENERALES*/
-h1 {
+h1, h2, h3, a{
     font-family: var(--fuenteTitulo);
+   
 }
-h2 {
-    font-family: var(--fuenteTitulo);
-}
-h3 {
-    font-family: var(--fuenteTitulo);
-}
-
-
 p {
     font-family: var(--fuenteCuerpo);
 }
-a{
-    font-family: var(--fuenteTitulo);
-}
 
+/*CAFE, PASTELERIA,CURSOS Y CATAS, CONTACTO*/
 .titulo{
     color: var(--verde);
     text-align: center;
-    font-size: 4rem;
-    padding: 3rem;
+    font-size: 3rem;
+    padding: 3rem 3rem 0 3rem;
+}
+/*HEADER*/
+.bg-nav-personalizado{
+    background-color: var(--gris);   
 }
 
-    /*HEADER*/
-.bar{
-    background-color: var(--gris);
-}
 .bar a{
-    margin-right: 2rem;
     font-size: 2rem;
     color: var(--verde);
-    font-weight: bold;
+    font-weight: bold;   
 }
+
 .header{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 1rem;
     padding-bottom: 1rem;
- 
+    flex-direction: column;
 }
 
 .logo {
-    width: 12rem;
-    height: auto;
-    padding-left: 2rem;
+    width: 15rem;
 }
 
-
-.navegacion-enlace{
-    text-decoration: none;
-   
-}
-.list{
+.list-cafeteria{
     list-style-type: none;
 }
 
+
 /*MAIN*/
+
 /*PAGINA PRINCIPAL*/
 /* foto principal y frase*/
 .bg{
@@ -89,88 +77,342 @@ a{
   background-attachment: fixed; 
   background-size:cover; 
   background-repeat: no-repeat;
-  padding-top: 15rem;
-  padding-bottom: 15rem;
- 
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
+
 .text-overlay{
-    padding: 4rem;
+    padding: 2rem;
     text-align: center;
-    font-size:5rem;
-    color: var(--blanco);
+    color: var(--blanco); 
+}
+
+.frase-principal h1{
+    font-size: 5rem;
+}
+
+.frase-principal h2{
+    font-size: 2rem;
 }
 /*espacios, productos destacados y opiniones  */
+
 .subtitulos h2{
-    background-color: var(--cafe);
-    font-size: 4rem;
+    background-color: var(--cafeSecundario);
+    font-size: 3rem;
     color: var(--blanco);
     text-align:center;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    opacity: 0.5;
 }
 
+
+/*ESPACIOS*/
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      margin: auto;
+  }
+  .item h3{
+    font-size: 2rem;
+    text-align:center;
+    padding: 0;
+  }
+  .item p{
+    font-size: 0;
+
+  }
+
+  
+/*PRODUCTOS DESTACADOS*/
+
+
+
+/*OPINIONES DE CLIENTES*/
 .opinions{
     display: flex;
+    flex-direction: column;
     padding: 3rem;
     
-   
 }
+
 .opinions-body{
-    width: 30%;
-    margin: 1.5rem;
-    
-    
+    width: 100%;
+    height: auto;
 }
+
 .opinions-body p{
     
     color: var(--negro);
     padding: 1.5rem;
-    text-align: left;
     font-size: 1.5rem;
-    margin-left: 4rem;
     text-align: justify;
-    font-weight: 400;
+    font-weight: 500;
     
 }
+
 .opinions-body h3{
     font-size: 2rem;
     color: var(--verde);
     margin-left: 2rem;
- 
 }
 
 .img-nombre{
     display: flex;
 }
+
 .opinions-body img{
     width: 6rem;
     height: auto;
-    display: block;
-    
-      
+    display: block;     
+}
+/*COSAS EN COMUN PAG CAFE Y PASTELERIA*/
+
+.producto-informacion{
+    background-color: var(--gris);
 }
 
-/*CONTACTO*/
+.producto-informacion p{
+    font-size: 1.5rem;
+    font-family: var(--fuenteTitulo);
+    text-align: center;
+}
+.producto-informacion h2{
+    font-size: 1.5rem;
+    font-family: var(--fuenteTitulo);
+    text-align: center;
+}
+
+.cantidad-productos {
+    border:  solid var(--verde);
+    background-color: var(--gris);
+    color: var(--verde);
+    font-size: 1.3rem;
+    font-family: var(--fuenteTitulo);
+    text-align: center;
+    padding: 1rem;
+    appearance: none;
+}
+
+/*PAGINA CAFE*/
+
+.sidebar{
+    /*modificar para que me abra una ventana emergente al dar click a filtro*/
+    text-align: center;
+}
+
+.sidebar h2{
+    font-family: var(--fuenteTitulo);
+    font-size: 2rem;
+    text-align:start;
+}
+
+.sidebar p{
+    font-family: var(--fuenteCuerpo);
+    font-size: 1.5rem;
+    text-align: start;
+}
+.list-cafeteria{
+    display: grid;
+    gap: 2rem;
+    padding-left: 0;
+    
+}
+
+.filtro-submit{
+    background-color: var(--blanco);
+    border-color: var(--negro);
+    border-radius: 5%;
+    font-size: 1.5rem;
+    font-family: var(--fuenteTitulo);
+    padding: 0.5rem;
+    transition: background-color .3s ease;
+   
+}
+
+.filtro-submit:hover {
+    cursor: pointer;
+    background-color: var(--cafeSecundario);
+}
+
+
+.grilla-productos-cafe{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;    
+    gap: 2rem;
+    margin: 4rem;
+   
+}
+
+.grilla-producto-cafe p, input{
+    width: 100%;
+}
+
+.grilla-producto-cafe img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.submit {
+    background-color: var(--cafeSecundario);
+    border-color: var(--cafe);
+    border-radius: 5%;
+    font-size: 1.3rem;
+    font-family: var(--fuenteTitulo);
+    padding: 1rem;
+    transition: background-color .5s ease;
+
+}
+
+.submit:hover {
+    cursor: pointer;
+    background-color: var(--gris);
+}
+
+
+
+/*PAGINA PASTELERIA*/
+.grilla-productos-pasteleria{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;    
+    gap: 2rem;
+    margin: 3rem;
+   
+}
+
+.grilla-producto-pasteleria p, input{
+    width: 100%;
+}
+
+.grilla-producto-pasteleria img{
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 10px 10px 20px var(--verde);
+}
+
+.grilla-producto-pasteleria:hover{
+    transform: scale(1.2);
+}
+
+ /*PAGINA DE CURSOS Y CATAS*/
+
+.contenedor {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;   
+    gap: 3rem;  
+}
+
+.contenedor__curso{
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    border-bottom: 1.5px solid var(--verde);
+    border-bottom-right-radius: 15%;
+    border-bottom-left-radius: 5%;
+    border-bottom-style:groove;
+    border-top: 1.5px solid var(--verde);
+    border-top-right-radius: 5%;
+    border-top-left-radius: 15%;
+    border-top-style: groove;
+  
+   
+}
+.contenedor__curso__imagen{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.contenedor__curso__imagen img{
+    width: 40%;
+  
+}
+.contenedor__curso__informacion{
+    padding: 2rem  2rem 0 2rem;
+}
+
+.contenedor__curso__informacion p{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.contenedor__curso__informacion h3{
+   text-align: center;
+   font-size: 2rem;
+   font-weight: bold;
+}
+
+.descripcion-curso p{
+    text-align: justify;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+.curso__submit{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 5%;
+    border-color: var(--cafe);
+    font-size: 1.5rem;
+    font-family: var(--fuenteTitulo);
+
+
+}
+.curso__submit input{
+    background-color: var(--cafeSecundario);
+}
+
+.curso__submit:hover {
+    cursor: pointer;
+   
+}
+
+
+/*PAGINA CONTACTO*/
+/*.marca-agua{
+    background-image: url(../assets/img/coffe_branch_2.jpg);
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}*/
+    
+
 
 .contacto-bg{
     background-image: url(../assets/img/contacto.jpg);
-    height: 30rem;
+    height: 20rem;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-left: 10rem;
-    margin-right: 10rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
 } 
 .formulario {
     background-color: var(--blanco);
-    margin: -5rem auto 0 auto;
-    width: 50%;
-    padding: 5rem;
+    margin: -7rem auto 0 auto;
+    width: 80%;
+    padding: 2rem;
 }
 
 .campo {
     display: flex;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     text-align: right;
     
 
@@ -188,7 +430,7 @@ a{
  }
 
  .campo-field-textarea{
-     height: 20rem;
+     height: 15rem;
 
  }
  .boton {
@@ -196,16 +438,14 @@ a{
     font-family: var(--fuenteTitulo);
     color: var(--verde);
     text-align: center;
-    padding: 1rem 3rem;
+    padding: 1rem 1rem;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 2rem;
-    margin-bottom: 2rem;
     border: none;
 }
  .boton-primario {
     background-color: var(--gris);
-    padding: 1rem;
 
 }
 .boton:hover{
@@ -215,26 +455,35 @@ a{
 
 
 /*FOOTER*/
+.list{
+    list-style-type: none;
+}
+.list a{
+    text-decoration: none;
+}
 .container-footer{
     background-color: var(--gris);
     color: var(--verde);
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding-left:  2rem;
-    padding-right:  2rem;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
+    padding: 3rem 2rem 2rem 2rem;
+    position: relative;
+    margin-top: 2rem;
 }
 .container-footer h2{
     font-size: 1.5rem;
     font-weight: bold;
+    text-align: center;
  
 }
 .container-footer p{
     font-size: 1rem;
     font-weight: bold;
-    padding-left: 4rem;
+    text-align: start;
+    padding-top: 1rem;
+   
+   
 
 }
 .container-footer a{
@@ -246,3 +495,293 @@ a{
     color: var(--verde);
 
 }
+.sucursales svg{
+    position: absolute;
+    top: 4rem; /*al expandir la pantallla se va a romper*/
+    left: 33%;
+}
+.seguinos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (width < 768px  ) {
+    .sidebar{
+        display: none;
+    }
+}
+@media screen and (min-width:0) {
+    .subtitulos h2{
+        margin-top: 0;
+    }
+    
+}
+@media screen and (min-width: 480px) {
+    .bg{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+       
+    }
+
+      .text-overlay{
+        padding: 2rem;
+    }
+
+    .frase-principal h1{
+        font-size: 5rem;
+    }
+
+    .frase-principal h2{
+        font-size: 2rem;
+    }
+
+    .subtitulos h2{
+        margin-top: 0;
+    }
+
+    .grilla-productos-cafe{
+        grid-template-columns: repeat(3, 30%);     
+    }
+    .grilla-productos-pasteleria{
+        grid-template-columns: repeat(3, 30%);  
+        gap: 2rem;     
+    }
+    .contenedor {
+        grid-template-columns: 90%;
+    }
+
+}
+@media screen and (min-width: 768px) {
+    .bg{
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+       
+    }
+
+      .text-overlay{
+        padding: 2rem;
+    }
+
+    .frase-principal h1{
+        font-size: 7rem;
+    }
+
+    .frase-principal h2{
+        font-size: 3rem;
+    }
+
+    .subtitulos h2{
+        margin-top: 0;
+        font-size: 4rem;
+    }
+
+    .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .container-principal-cafe{
+        display: grid;
+        grid-template-columns: 20% 80%;
+    }
+    
+
+    .sidebar{
+        padding-left: 3rem;
+    }
+
+    .grilla-productos-cafe{
+        grid-template-columns: repeat(3, 30%);  
+    
+       
+    }
+
+    .grilla-productos-pasteleria{
+        grid-template-columns: repeat(3, 30%);  
+       
+    }
+
+    .container-principal-pasteleria{
+        display: grid;
+        grid-template-columns: 5% 95%;
+    }
+
+    .contenedor {
+        grid-template-columns: 80%;
+    }
+    
+    .contenedor__curso__informacion h3{
+       font-size: 3rem;
+    }
+
+    .contenedor__curso__informacion p {
+        font-size: 2rem;
+    }
+    
+    .curso__submit{
+        font-size: 2rem;
+    }
+
+    
+    
+
+}
+
+@media screen and (min-width: 992px) {
+    .titulo h1{
+        font-size: 3rem;
+    }
+    .bg{
+        padding-top: 15rem;
+        padding-bottom: 15rem;
+       
+    }
+
+    .text-overlay{
+        padding: 4rem;
+    }
+
+    .frase-principal h1{
+        font-size: 10rem;
+    }
+
+    .frase-principal h2{
+        font-size: 5rem;
+    }
+
+    .subtitulos h2{
+        margin-top: 0;
+        font-size: 4rem;
+    }
+
+    .opinions{
+        flex-direction: row;  
+    }
+
+    .opinions-body{
+        width: 30%;
+        margin: 1.5rem;
+        
+        
+    }
+
+    .opinions-body p{
+        text-align: left;
+        margin-left: 3rem;    
+    }
+
+    .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+    
+    .carousel{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .item h3{
+        font-size: 3rem;
+    }
+
+    .item p{
+        font-size: 2rem;
+    }
+    /*mq cafeteria*/
+    .container-principal-cafe{
+        display: grid;
+        grid-template-columns: 10% 90%;
+       
+    }
+
+    .grilla-productos-cafe{
+        grid-template-columns: repeat(4, 20%);   
+           
+    }
+
+    .sidebar{
+        padding-left: 3rem;
+    }
+
+    .submit{
+        font-size: 1.5rem;
+    }
+    .cantidad-productos {
+        font-size: 1.5rem;
+    }
+    /*mq pasteleria*/
+    .container-principal-pasteleria{
+        display: grid;
+        grid-template-columns: 10% 90%;
+        padding-left: 3rem;
+    }
+    .grilla-productos-pasteleria{
+        grid-template-columns: repeat(4, 20%);   
+           
+    }
+    
+    .grilla-producto-pasteleria:hover{
+        transform: scale(1.3);
+    }
+   
+    /*mq cursos y catas*/
+    .contenedor {
+        grid-template-columns: 60%;
+    }
+    
+    .contenedor__curso__informacion h3{
+       font-size: 3rem;
+    }
+
+    .contenedor__curso__informacion p {
+        font-size: 2rem;
+    }
+
+    .curso__submit{
+        font-size: 2rem;
+    }  
+
+    /*mq contacto*/
+
+    .contacto-bg{   
+        height: 30rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    } 
+    .formulario {
+        margin: -5rem auto 0 auto;
+        width: 50%;
+        padding: 5rem;
+    }
+    
+    .campo {
+        margin-bottom: 2rem;
+    }
+    
+    
+    .campo-field-textarea{
+         height: 20rem;
+    
+    }
+
+     .boton {
+        padding: 1rem 3rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        
+    }
+     .boton-primario {
+        padding: 1rem;
+    
+    }
+
+}
+
+

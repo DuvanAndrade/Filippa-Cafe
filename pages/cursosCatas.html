@@ -9,6 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;800&family=Roboto:wght@300;400&display=swap" rel="stylesheet"/>
+
+    <!--Enlazando boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+
     <!-- #region enlazando css-->
     <link rel="stylesheet" href="../css/style.css">
     <title>Filippa Café</title>
@@ -18,27 +23,174 @@
 </head>
 <body>
 
-  <header class="header bar">
-    <a href="../index.html"> 
-      <img class="logo" src="../assets/img/logo.png" alt="logo">
-    </a>
-    <nav class="navegacion">
-          <a href="../index.html" class="navegacion-enlace">Inicio</a>
-          <a href="cafeteria.html" class="navegacion-enlace">Cafeteria</a>
-          <a href="pasteleria.html" class="navegacion-enlace">Pasteleria</a>
-          <a href="cursosCatas.html" class="navegacion-enlace">Cursos y Catas</a>
-          <a href="contacto.html" class="navegacion-enlace">Contacto</a>
+  <header>
+
+    <nav class="navbar bg-nav-personalizado navbar-expand-sm m-0">
+      <div class="container-fluid">
+        <a  href="../index.html">
+          <img class="logo ps-3" src="../assets/img/logo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          
+          <div class="offcanvas-body d-flex justify-content-end pe-3">
+            <ul class="navbar-nav bar ps-5 grid gap-4 ">
+              <li><a class="nav-link " href="../index.html">Inicio</a></li>
+              <li><a class="nav-link" href="cafeteria.html">Cafeteria</a></li>
+              <li><a class="nav-link" href="pasteleria.html">Pasteleria</a></li>
+              <li><a class="nav-link" href="cursosCatas.html">Cursos y Catas</a></li>
+              <li><a class="nav-link" href="contacto.html">Contacto</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
     </nav>
 
-  </header>
+    </header>
 
     <main>
+
+      <div class="titulo">
+        <h1>Nuestros Cursos</h1>
+      </div>
+      
+      <div class="contenedor">
+      <div class="contenedor__curso">
+        <div class="contenedor__curso__imagen">
+            <img src="../assets/img/cursos/curso2.jpg" alt="Imagen del curso">
+        </div>
+        <div class="contenedor__curso__informacion">
+            <h3>Barista y Arte Latte</h3>
+            <p><b>Precio:</b> Gratis</p>
+            <p><b>Cupo:</b> 20</p> <br>
+            <div class="descripcion-curso">
+            <p>
+                Donec tempor, nisl et rhoncus viverra, turpis enim convallis ligula, non hendrerit nulla tortor nec odio. Morbi non mattis nunc, elementum auctor arcu. Aliquam vestibulum arcu non sem porta auctor. Nam vel congue ligula, eu condimentum felis. Nunc aliquam hendrerit odio sit amet venenatis. Nunc varius, libero a tempor rutrum, nulla risus congue velit, nec suscipit nibh lectus ac dolor. Nulla facilisi.
+            </p>
+          </div>
+        </div> 
+        <div class="curso__submit">
+          <input class="curso__submit" type="submit" value="Agregar al Carrito">
+        </div>
+      </div>
+
+      <div class="contenedor__curso">
+        <div class="contenedor__curso__imagen">
+            <img src="../assets/img/cursos/filtrado.jpg" alt="Imagen del curso">
+        </div>
+        <div class="contenedor__curso__informacion">
+            <h3>Especialización Café Filtrados</h3>
+            <p><b>Precio:</b> Gratis</p>
+            <p><b>Cupo:</b> 20</p> <br>
+            <div class="descripcion-curso">
+            <p>
+                Donec tempor, nisl et rhoncus viverra, turpis enim convallis ligula, non hendrerit nulla tortor nec odio. Morbi non mattis nunc, elementum auctor arcu. Aliquam vestibulum arcu non sem porta auctor. Nam vel congue ligula, eu condimentum felis. Nunc aliquam hendrerit odio sit amet venenatis. Nunc varius, libero a tempor rutrum, nulla risus congue velit, nec suscipit nibh lectus ac dolor. Nulla facilisi.
+            </p>
+          </div>
+        </div> 
+        <div class="curso__submit">
+          <input class="curso__submit" type="submit" value="Agregar al Carrito">
+        </div>
+      </div>
+
+
+      <div class="contenedor__curso">
+        <div class="contenedor__curso__imagen">
+            <img src="../assets/img/cursos/curso1.jpg" alt="Imagen del curso">
+        </div>
+        <div class="contenedor__curso__informacion">
+            <h3>Especializacion en Arte Latte</h3>
+            <p><b>Precio:</b> Gratis</p>
+            <p><b>Cupo:</b> 20</p> <br>
+            <div class="descripcion-curso">
+            <p>
+                Donec tempor, nisl et rhoncus viverra, turpis enim convallis ligula, non hendrerit nulla tortor nec odio. Morbi non mattis nunc, elementum auctor arcu. Aliquam vestibulum arcu non sem porta auctor. Nam vel congue ligula, eu condimentum felis. Nunc aliquam hendrerit odio sit amet venenatis. Nunc varius, libero a tempor rutrum, nulla risus congue velit, nec suscipit nibh lectus ac dolor. Nulla facilisi.
+            </p>
+          </div>
+        </div> 
+        <div class="curso__submit">
+          <input class="curso__submit" type="submit" value="Agregar al Carrito">
+        </div>
+      </div>
+
+
+      <div class="contenedor__curso">
+        <div class="contenedor__curso__imagen">
+            <img src="../assets/img/cursos/curso5.jpg" alt="Imagen del curso">
+        </div>
+        <div class="contenedor__curso__informacion">
+            <h3>Taller Calibración</h3>
+            <p><b>Precio:</b> Gratis</p>
+            <p><b>Cupo:</b> 20</p> <br>
+            <div class="descripcion-curso">
+            <p>
+                Donec tempor, nisl et rhoncus viverra, turpis enim convallis ligula, non hendrerit nulla tortor nec odio. Morbi non mattis nunc, elementum auctor arcu. Aliquam vestibulum arcu non sem porta auctor. Nam vel congue ligula, eu condimentum felis. Nunc aliquam hendrerit odio sit amet venenatis. Nunc varius, libero a tempor rutrum, nulla risus congue velit, nec suscipit nibh lectus ac dolor. Nulla facilisi.
+            </p>
+          </div>
+        </div> 
+        <div class="curso__submit">
+          <input class="curso__submit" type="submit" value="Agregar al Carrito">
+        </div>
+      </div>
+      </div>
+      
+      <div class="titulo">
+        <h1>Nuestras Catas</h1>
+      </div>
+     
+      <div class="contenedor">
+        <div class="contenedor__curso">
+          <div class="contenedor__curso__imagen">
+              <img src="../assets/img/cursos/cata1.jpg" alt="Imagen del curso">
+          </div>
+          <div class="contenedor__curso__informacion">
+              <h3>Cata de Café Verde</h3>
+              <p><b>Precio:</b> Gratis</p>
+              <p><b>Cupo:</b> 20</p> <br>
+              <div class="descripcion-curso">
+              <p>
+                  Donec tempor, nisl et rhoncus viverra, turpis enim convallis ligula, non hendrerit nulla tortor nec odio. Morbi non mattis nunc, elementum auctor arcu. Aliquam vestibulum arcu non sem porta auctor. Nam vel congue ligula, eu condimentum felis. Nunc aliquam hendrerit odio sit amet venenatis. Nunc varius, libero a tempor rutrum, nulla risus congue velit, nec suscipit nibh lectus ac dolor. Nulla facilisi.
+              </p>
+            </div>
+          </div> 
+          <div class="curso__submit">
+            <input class="curso__submit" type="submit" value="Agregar al Carrito">
+          </div>
+        </div>
+  
+        <div class="contenedor__curso">
+          <div class="contenedor__curso__imagen">
+              <img src="../assets/img/cursos/cata2.jpg" alt="Imagen del curso">
+          </div>
+          <div class="contenedor__curso__informacion">
+              <h3>Cata de Café Tostado</h3>
+              <p><b>Precio:</b> Gratis</p>
+              <p><b>Cupo:</b> 20</p> <br>
+              <div class="descripcion-curso">
+              <p>
+                  Donec tempor, nisl et rhoncus viverra, turpis enim convallis ligula, non hendrerit nulla tortor nec odio. Morbi non mattis nunc, elementum auctor arcu. Aliquam vestibulum arcu non sem porta auctor. Nam vel congue ligula, eu condimentum felis. Nunc aliquam hendrerit odio sit amet venenatis. Nunc varius, libero a tempor rutrum, nulla risus congue velit, nec suscipit nibh lectus ac dolor. Nulla facilisi.
+              </p>
+            </div>
+          </div> 
+          <div class="curso__submit">
+            <input class="curso__submit" type="submit" value="Agregar al Carrito">
+          </div>
+        </div>
+        </div>
+       
+
+
+    
 
     </main>
     
     <footer class="container-footer">
       <section>
-        <h2>NAVEGACIÓN</h2>
+        <div class="navegacion-footer">
+          <h2>NAVEGACIÓN</h2>
         <ul class="list">
           <li><a href="../index.html" class="navegacion-enlace">Inicio</a></li>
           <li><a href="cafeteria.html" class="navegacion-enlace">Cafeteria</a></li>
@@ -46,21 +198,23 @@
           <li><a href="cursosCatas.html" class="navegacion-enlace">Cursos y Catas</a></li>
           <li><a href="contacto.html" class="navegacion-enlace">Contacto</a></li>
         </ul>
+        </div>
       </section>
 
       <section>
-        <h2>
+        <div class="sucursales">
           <!--ICONO DE LOCALIZACION-->
           <svg class="icon"  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30" fill="currentColor" class="bi bi-geo-alt-fill"
-            viewBox="0 0 16 16"><path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>
-            SUCURSALES
-        </h2>
-        <p>Av Córdoba 1111</p>
-        <p>Tel: 4859672</p>
+          viewBox="0 0 16 16"><path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>
+          <h2> SUCURSALES</h2>
+          <p>Av Córdoba 1111</p>
+          <p>Tel: 4859672</p>
+        </div>
       </section>
 
       <section>
-        <h2>SEGUINOS</h2>
+        <div class="seguinos">
+          <h2>SEGUINOS</h2>
         <!--ICONO INSTAGRAM-->
         <svg
           class="icon"
@@ -82,7 +236,11 @@
           class="bi bi-facebook"
           viewBox="0 0 16 16">
           <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/></svg>
+      
+        </div>
       </section>
     </footer>
+     <!--Script boostrap-->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>
 </html>
