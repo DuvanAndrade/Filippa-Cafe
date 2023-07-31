@@ -43,6 +43,9 @@ p {
 .bg-nav-personalizado{
     background-color: var(--gris);   
 }
+.bar{
+    justify-content: flex-end;
+}
 
 .bar a{
     font-size: 2rem;
@@ -632,6 +635,7 @@ p {
 }
 
 @media screen and (min-width: 992px) {
+    
     .titulo h1{
         font-size: 3rem;
     }
