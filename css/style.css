@@ -127,6 +127,61 @@ p {
 
   }
 
+/*frase */
+.barra{
+    background-color: var(--cafeSecundario);
+    padding: 2rem;
+}
+
+
+     
+
+
+.barra__bg {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;   
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-image: url(../assets/img/coffe_branch_2.png);
+    background-attachment: fixed;
+  }
+  
+  .element {
+    position: absolute;
+  }
+  
+  .element1 {
+    top: 5px;
+    left: 75px;
+  }
+  .element1 h2, p{
+    text-align: center;
+  }
+  .element3 {
+    top: 200px;
+    left: 100px;
+  }
+  .element3 img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .element2{
+    background-color: var(--cafe);
+    padding: 9rem;
+    top: 360px;
+    left: 65px;
+    
+
+  }
+ .style1{
+    color: #4b6246;
+ }
   
 /*PRODUCTOS DESTACADOS*/
 
@@ -384,17 +439,6 @@ p {
 
 
 /*PAGINA CONTACTO*/
-/*.marca-agua{
-    background-image: url(../assets/img/coffe_branch_2.jpg);
-    width: 100%;
-    height: auto;
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.5;
-    margin-left: 2rem;
-    margin-right: 2rem;
-}*/
-    
 
 
 .contacto-bg{
@@ -520,8 +564,11 @@ p {
     .subtitulos h2{
         margin-top: 0;
     }
+
+    
     
 }
+
 @media screen and (min-width: 480px) {
     .bg{
         padding-top: 5rem;
@@ -555,6 +602,40 @@ p {
     .contenedor {
         grid-template-columns: 90%;
     }
+
+
+
+
+    .barra__bg{
+        height: 800px;
+    }
+      
+    .element1 {
+        top: 55px;
+        left: 200px;
+    }
+    .element1 h2{
+        font-size: 4.5rem;
+    }
+
+    .element1 p{
+        font-size: 2.5rem;
+    }
+
+    .element3 {
+        top: 420px;
+        left: 300px;
+    }
+      
+    .element2{
+        padding: 12rem;
+        top: 520px;
+        left: 230px;
+    }
+
+
+
+
 
 }
 @media screen and (min-width: 768px) {
@@ -628,7 +709,23 @@ p {
     .curso__submit{
         font-size: 2rem;
     }
+    
+    .element1 {
+        top: 255px;
+        left: 30px;
+    }
 
+    .element3 {
+        top: 250px;
+        left: 500px;
+    }
+      
+    .element2{
+        top: 340px;
+        left: 450px;
+    }
+    
+      
     
     
 
@@ -774,17 +871,51 @@ p {
     
     }
 
-     .boton {
+    .boton {
         padding: 1rem 3rem;
         text-transform: uppercase;
         font-weight: bold;
         margin-bottom: 2rem;
         
     }
-     .boton-primario {
+    .boton-primario {
         padding: 1rem;
     
     }
+    
+
+    .element1 {
+        top: 200px;
+        left: 140px;
+    }
+    .element1 h2{
+        font-size: 8rem;
+    }
+    .element1 p{
+        font-size: 4rem;
+    }
+
+    .element3 {
+        top: 200px;
+        left: 970px;
+    }
+
+   
+    .element2{
+        top: 430px;
+        left: 900px;
+    }
+    .element3 img{
+        width: 120%;
+        height: 400px;
+    }
+
+    
+
+    
+    
+
+    
 
 }
 
