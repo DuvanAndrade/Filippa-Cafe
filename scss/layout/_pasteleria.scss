@@ -9,18 +9,18 @@
    
 }
 
-.grilla-producto-pasteleria p, input{
+.grilla-producto-pasteleria{
+    p, input{
     width: 100%;
 }
-
-.grilla-producto-pasteleria img{
+    img{
     width: 100%;
     object-fit: cover;
     box-shadow: 10px 10px 20px $verde;
 }
-
-.grilla-producto-pasteleria:hover{
+    &:hover{
     transform: scale(1.2);
+}
 }
 
 /*MEDIA QUERIES*/
@@ -32,14 +32,13 @@
 }
 
 @media screen and (min-width: 768px){
+    .container-principal-pasteleria{
+        display: grid;
+        grid-template-columns: 5% 95%;
+    }
     .grilla-productos-pasteleria{
     grid-template-columns: repeat(3, 30%);  
    
-}
-
-.container-principal-pasteleria{
-    display: grid;
-    grid-template-columns: 5% 95%;
 }
 }
 

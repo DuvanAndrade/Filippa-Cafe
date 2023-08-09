@@ -47,14 +47,16 @@
     font-weight: bold;
     font-size: 2rem;
     border: none;
+    
+    &:hover{
+    cursor: pointer;
+}
 }
  .boton-primario {
     background-color: $gris;
 
 }
-.boton:hover{
-    cursor: pointer;
-}
+
 
 /**MEDIA QUERIES*/
 @media screen and (min-width: 992px){

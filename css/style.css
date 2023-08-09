@@ -536,16 +536,14 @@ p {
   margin: 3rem;
 }
 
-.grilla-producto-pasteleria p, input {
+.grilla-producto-pasteleria p, .grilla-producto-pasteleria input {
   width: 100%;
 }
-
 .grilla-producto-pasteleria img {
   width: 100%;
   object-fit: cover;
   box-shadow: 10px 10px 20px #4b6246;
 }
-
 .grilla-producto-pasteleria:hover {
   transform: scale(1.2);
 }
@@ -558,12 +556,12 @@ p {
   }
 }
 @media screen and (min-width: 768px) {
-  .grilla-productos-pasteleria {
-    grid-template-columns: repeat(3, 30%);
-  }
   .container-principal-pasteleria {
     display: grid;
     grid-template-columns: 5% 95%;
+  }
+  .grilla-productos-pasteleria {
+    grid-template-columns: repeat(3, 30%);
   }
 }
 @media screen and (min-width: 992px) {
@@ -589,7 +587,6 @@ p {
   grid-template-rows: auto;
   gap: 3rem;
 }
-
 .contenedor__curso {
   padding-bottom: 2rem;
   padding-top: 2rem;
@@ -602,31 +599,26 @@ p {
   border-top-left-radius: 15%;
   border-top-style: groove;
 }
-
+.contenedor__curso__informacion {
+  padding: 2rem 2rem 0 2rem;
+}
+.contenedor__curso__informacion p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.contenedor__curso__informacion h3 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
 .contenedor__curso__imagen {
   padding-top: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .contenedor__curso__imagen img {
   width: 40%;
-}
-
-.contenedor__curso__informacion {
-  padding: 2rem 2rem 0 2rem;
-}
-
-.contenedor__curso__informacion p {
-  text-align: center;
-  font-size: 1.5rem;
-}
-
-.contenedor__curso__informacion h3 {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: bold;
 }
 
 .descripcion-curso p {
@@ -646,11 +638,9 @@ p {
   font-size: 1.5rem;
   font-family: "League Spartan", sans-serif;
 }
-
 .curso__submit input {
   background-color: #ccab95;
 }
-
 .curso__submit:hover {
   cursor: pointer;
 }
@@ -738,13 +728,12 @@ p {
   font-size: 2rem;
   border: none;
 }
+.boton:hover {
+  cursor: pointer;
+}
 
 .boton-primario {
   background-color: #f6f6f4;
-}
-
-.boton:hover {
-  cursor: pointer;
 }
 
 /**MEDIA QUERIES*/

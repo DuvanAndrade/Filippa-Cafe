@@ -7,10 +7,9 @@
     align-items: center;
     grid-template-columns: 100%;
     grid-template-rows: auto;   
-    gap: 3rem;  
-}
-
-.contenedor__curso{
+    gap: 3rem; 
+    
+    &__curso{
     padding-bottom: 2rem;
     padding-top: 2rem;
     border-bottom: 1.5px solid $verde;
@@ -20,35 +19,34 @@
     border-top: 1.5px solid $verde;
     border-top-right-radius: 5%;
     border-top-left-radius: 15%;
-    border-top-style: groove;
-  
-   
-}
-.contenedor__curso__imagen{
+    border-top-style: groove; 
+    
+    &__informacion{
+        padding: 2rem  2rem 0 2rem;
+        
+        p{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+        h3{
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    }
+    
+    &__imagen{
     padding-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     
+        img{
+        width: 40%;
 }
-.contenedor__curso__imagen img{
-    width: 40%;
-  
 }
-.contenedor__curso__informacion{
-    padding: 2rem  2rem 0 2rem;
 }
-
-.contenedor__curso__informacion p{
-    text-align: center;
-    font-size: 1.5rem;
 }
-.contenedor__curso__informacion h3{
-   text-align: center;
-   font-size: 2rem;
-   font-weight: bold;
-}
-
 .descripcion-curso p{
     text-align: justify;
     padding-right: 2rem;
@@ -64,16 +62,12 @@
     border-color: $cafe;
     font-size: 1.5rem;
     font-family: $fuenteTitulo;
-
-
-}
-.curso__submit input{
+    input{
     background-color: $cafeSecundario;
 }
-
-.curso__submit:hover {
-    cursor: pointer;
-   
+    &:hover {
+    cursor: pointer;  
+}
 }
 
 /*MEDIA QUERIES*/
@@ -87,34 +81,35 @@
 @media screen and (min-width: 768px){
     .contenedor {
         grid-template-columns: 80%;
-    }
-
-    .contenedor__curso__informacion h3{
+        
+        &__curso__informacion{
+        h3{
         font-size: 3rem;
-     }
- 
-     .contenedor__curso__informacion p {
+    }
+        p {
          font-size: 2rem;
-     }
-     
-     .curso__submit{
+    }
+    } 
+    }
+    .curso__submit{
          font-size: 2rem;
-     }
+    }
 }
+
 
 @media screen and (min-width: 992px){
     .contenedor {
         grid-template-columns: 60%;
+        
+        &__curso__informacion{
+        h3{
+        font-size: 3rem;
     }
-    
-    .contenedor__curso__informacion h3{
-       font-size: 3rem;
-    }
-
-    .contenedor__curso__informacion p {
+        p {
         font-size: 2rem;
     }
-
+    }
+    }
     .curso__submit{
         font-size: 2rem;
     }  
