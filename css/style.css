@@ -465,9 +465,10 @@ p {
   margin: 4rem;
 }
 
-.grilla-producto-cafe p {
+.grilla-producto-cafe p, input {
   width: 100%;
 }
+
 .grilla-producto-cafe img {
   width: 100%;
   object-fit: cover;
@@ -475,7 +476,7 @@ p {
 
 .submit {
   background-color: #ccab95;
-  border-color: var(--cafe);
+  border-color: #8c522c;
   border-radius: 5%;
   font-size: 1.3rem;
   font-family: "League Spartan", sans-serif;
@@ -492,9 +493,6 @@ p {
   .sidebar {
     display: none;
   }
-  .grilla-productos-cafe {
-    grid-template-columns: repeat(3, 30%);
-  }
 }
 @media screen and (min-width: 768px) {
   .container-principal-cafe {
@@ -510,7 +508,6 @@ p {
 }
 @media screen and (min-width: 992px) {
   .container-principal-cafe {
-    display: grid;
     grid-template-columns: 10% 90%;
   }
   .grilla-productos-cafe {
