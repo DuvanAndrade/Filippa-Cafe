@@ -1,0 +1,50 @@
+/*FOOTER*/
+.list{
+    list-style-type: none;
+     a{
+    text-decoration: none;
+    }
+}
+.container-footer{
+    background-color: $gris;
+    color: $verde;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 3rem 2rem 2rem 2rem;
+    position: relative;
+    margin-top: 2rem;
+    
+    h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+     p{
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: start;
+    padding-top: 1rem;
+}
+    a{
+    font-size: 1rem;
+    color: $verde;
+    font-weight: bold;
+}
+
+}
+.icon{
+    color: $verde;
+
+}
+.sucursales svg{
+    position: absolute;
+    top: 4rem; /*al expandir la pantallla se va a romper*/
+    left: 33%;
+}
+.seguinos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}

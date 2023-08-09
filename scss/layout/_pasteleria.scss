@@ -1,0 +1,60 @@
+.grilla-productos-pasteleria{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;    
+    gap: 2rem;
+    margin: 3rem;
+   
+}
+
+.grilla-producto-pasteleria p, input{
+    width: 100%;
+}
+
+.grilla-producto-pasteleria img{
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 10px 10px 20px $verde;
+}
+
+.grilla-producto-pasteleria:hover{
+    transform: scale(1.2);
+}
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 480px) {
+    .grilla-productos-pasteleria{
+        grid-template-columns: repeat(3, 30%);  
+        gap: 2rem;     
+    }
+}
+
+@media screen and (min-width: 768px){
+    .grilla-productos-pasteleria{
+    grid-template-columns: repeat(3, 30%);  
+   
+}
+
+.container-principal-pasteleria{
+    display: grid;
+    grid-template-columns: 5% 95%;
+}
+}
+
+@media screen and (min-width: 992px){
+    .container-principal-pasteleria{
+        display: grid;
+        grid-template-columns: 10% 90%;
+        padding-left: 3rem;
+    }
+    .grilla-productos-pasteleria{
+        grid-template-columns: repeat(4, 20%);   
+           
+    }
+    
+    .grilla-producto-pasteleria:hover{
+        transform: scale(1.3);
+    }
+}

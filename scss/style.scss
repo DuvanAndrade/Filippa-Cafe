@@ -1,0 +1,13 @@
+//BASE
+@import 'base/reset';
+@import 'base/variables';
+//COMPONENTS
+@import 'components/navbar';
+@import 'components/footer';
+
+//LAYOUT
+@import 'layout/index';
+@import 'layout/cafeteria';
+@import 'layout/pasteleria';
+@import 'layout/cursosCatas';
+@import 'layout/contacto';

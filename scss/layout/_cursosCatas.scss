@@ -1,0 +1,122 @@
+/*PAGINA DE CURSOS Y CATAS*/
+
+.contenedor {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;   
+    gap: 3rem;  
+}
+
+.contenedor__curso{
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    border-bottom: 1.5px solid $verde;
+    border-bottom-right-radius: 15%;
+    border-bottom-left-radius: 5%;
+    border-bottom-style:groove;
+    border-top: 1.5px solid $verde;
+    border-top-right-radius: 5%;
+    border-top-left-radius: 15%;
+    border-top-style: groove;
+  
+   
+}
+.contenedor__curso__imagen{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.contenedor__curso__imagen img{
+    width: 40%;
+  
+}
+.contenedor__curso__informacion{
+    padding: 2rem  2rem 0 2rem;
+}
+
+.contenedor__curso__informacion p{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.contenedor__curso__informacion h3{
+   text-align: center;
+   font-size: 2rem;
+   font-weight: bold;
+}
+
+.descripcion-curso p{
+    text-align: justify;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+.curso__submit{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 5%;
+    border-color: $cafe;
+    font-size: 1.5rem;
+    font-family: $fuenteTitulo;
+
+
+}
+.curso__submit input{
+    background-color: $cafeSecundario;
+}
+
+.curso__submit:hover {
+    cursor: pointer;
+   
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (min-width: 480px){
+    .contenedor {
+    grid-template-columns: 90%;
+}
+}
+
+@media screen and (min-width: 768px){
+    .contenedor {
+        grid-template-columns: 80%;
+    }
+
+    .contenedor__curso__informacion h3{
+        font-size: 3rem;
+     }
+ 
+     .contenedor__curso__informacion p {
+         font-size: 2rem;
+     }
+     
+     .curso__submit{
+         font-size: 2rem;
+     }
+}
+
+@media screen and (min-width: 992px){
+    .contenedor {
+        grid-template-columns: 60%;
+    }
+    
+    .contenedor__curso__informacion h3{
+       font-size: 3rem;
+    }
+
+    .contenedor__curso__informacion p {
+        font-size: 2rem;
+    }
+
+    .curso__submit{
+        font-size: 2rem;
+    }  
+}
+

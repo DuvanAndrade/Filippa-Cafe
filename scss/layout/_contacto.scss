@@ -1,0 +1,95 @@
+.contacto-bg{
+    background-image: url(../assets/img/contacto.jpg);
+    height: 20rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+} 
+.formulario {
+    background-color: $blanco;
+    margin: -7rem auto 0 auto;
+    width: 80%;
+    padding: 2rem;
+}
+
+.campo {
+    display: flex;
+    margin-bottom: 1rem;
+    text-align: right;
+    
+
+}
+ .campo-label {
+    font-size: 1.5rem;
+    flex: 0 0 9rem;
+    padding-right: 2rem;
+ }
+
+ .campo-field {
+     font-size: 1.5rem;   
+     flex: 1;
+
+ }
+
+ .campo-field-textarea{
+     height: 15rem;
+
+ }
+ .boton {
+    display: block;
+    font-family: $fuenteTitulo;
+    color: $verde;
+    text-align: center;
+    padding: 1rem 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem;
+    border: none;
+}
+ .boton-primario {
+    background-color: $gris;
+
+}
+.boton:hover{
+    cursor: pointer;
+}
+
+/**MEDIA QUERIES*/
+@media screen and (min-width: 992px){
+    .contacto-bg{   
+        height: 30rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    } 
+    .formulario {
+        margin: -5rem auto 0 auto;
+        width: 50%;
+        padding: 5rem;
+    }
+    
+    .campo {
+        margin-bottom: 2rem;
+    }
+    
+    
+    .campo-field-textarea{
+         height: 20rem;
+    
+    }
+
+    .boton {
+        padding: 1rem 3rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        
+    }
+    .boton-primario {
+        padding: 1rem;
+    
+    }
+    
+
+}

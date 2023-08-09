@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*hace que el border, el padding no afecte el ancho de los elementos*/
+}
+
+html {
+    
+    font-size: 62.5%;
+    /*convierte 1 rem a 10 px*/
+}

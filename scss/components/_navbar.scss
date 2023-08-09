@@ -1,0 +1,26 @@
+/*HEADER*/
+.bg-nav-personalizado{
+    background-color: $gris;   
+}
+.bar{
+    justify-content: flex-end;
+    
+    a{
+    font-size: 2rem;
+    color: $verde;
+    font-weight: bold;   
+}
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    flex-direction: column;
+}
+
+.logo {
+    width: 15rem;
+}
