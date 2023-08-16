@@ -99,7 +99,7 @@ p {
 }
 
 .bg {
-  background-image: url(../assets/img/bayas-cafe-1-scaled.jpg);
+  background-image: url(../assets/img/bayas-cafe-1-scaled.png);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -188,6 +188,11 @@ p {
   top: 200px;
   left: 100px;
   overflow: hidden;
+  transform: scale(1);
+  transition: 0.5s;
+}
+.element3:hover {
+  transform: scale(1.15);
 }
 .element3 img {
   width: 100%;
@@ -433,7 +438,7 @@ p {
 }
 
 .contacto-bg {
-  background-image: url(../assets/img/contacto.jpg);
+  background-image: url(../assets/img/contacto.png);
   height: 20rem;
   background-size: cover;
   background-repeat: no-repeat;
@@ -626,7 +631,7 @@ p {
   }
   .element3 {
     top: 200px;
-    left: 870px;
+    left: 930px;
   }
   .element3 img {
     width: 120%;
@@ -634,7 +639,7 @@ p {
   }
   .element2 {
     top: 430px;
-    left: 800px;
+    left: 870px;
   }
 }
 /*CAFETERIA*/
