@@ -23,37 +23,3 @@
 }
 }
 
-/*MEDIA QUERIES*/
-@media screen and (min-width: 480px) {
-    .grilla-productos-pasteleria{
-        grid-template-columns: repeat(3, 30%);  
-        gap: 2rem;     
-    }
-}
-
-@media screen and (min-width: 768px){
-    .container-principal-pasteleria{
-        display: grid;
-        grid-template-columns: 5% 95%;
-    }
-    .grilla-productos-pasteleria{
-    grid-template-columns: repeat(3, 30%);  
-   
-}
-}
-
-@media screen and (min-width: 992px){
-    .container-principal-pasteleria{
-        display: grid;
-        grid-template-columns: 10% 90%;
-        padding-left: 3rem;
-    }
-    .grilla-productos-pasteleria{
-        grid-template-columns: repeat(4, 20%);   
-           
-    }
-    
-    .grilla-producto-pasteleria:hover{
-        transform: scale(1.3);
-    }
-}

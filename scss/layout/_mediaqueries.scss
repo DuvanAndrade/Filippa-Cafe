@@ -1,0 +1,370 @@
+  /*MEDIA QUERIES*/
+
+  /*INDEX*/
+
+  @media screen and (min-width: 480px) {
+    .bg{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+       
+    }
+
+    .text-overlay{
+        padding: 2rem;
+    }
+
+    .frase-principal{
+      h1{
+        font-size: 5rem;
+    }
+      h2{
+        font-size: 2rem;
+    }
+    }
+
+    .subtitulos h2{
+        margin-top: 0;
+    }
+
+   
+    .barra__bg{
+        height: 800px;
+    }
+      
+    .element1 {
+        top: 55px;
+        left: 200px;
+        h2{
+        font-size: 4.5rem;
+    }
+        p{
+        font-size: 2.5rem;
+    }
+    }
+    
+
+    .element3 {
+        top: 420px;
+        left: 300px;
+    }
+      
+    .element2{
+        padding: 12rem;
+        top: 520px;
+        left: 230px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .bg{
+        padding-top: 10rem;
+        padding-bottom: 10rem;   
+    }
+
+   .frase-principal{
+      h1{
+      font-size: 7rem;
+  }
+      h2{
+      font-size: 3rem;
+  }
+  }
+
+    
+
+    .subtitulos h2{
+        font-size: 4rem;
+    }
+
+    .carousel-inner {
+      >.item {
+        >img {
+          width: 100%;
+          height: 300px;
+          object-fit: cover;
+        }
+        >a {
+          >img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+
+    .element1 {
+        top: 255px;
+        left: 30px;
+    }
+
+    .element3 {
+        top: 250px;
+        left: 500px;
+    }
+      
+    .element2{
+        top: 340px;
+        left: 450px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    
+    .bg{
+        padding-top: 15rem;
+        padding-bottom: 15rem; 
+    }
+
+    .text-overlay{
+        padding: 4rem;
+    }
+
+    .frase-principal {
+      h1 {
+        font-size: 10rem;
+      }
+      h2 {
+        font-size: 5rem;
+      }
+    }
+
+    .opinions{
+        flex-direction: row;  
+    }
+
+    .opinions-body {
+      width: 30%;
+      margin: 1.5rem;
+      p {
+        text-align: left;
+        margin-left: 3rem;
+      }
+    }
+
+    .carousel-inner {
+      >.item {
+        >img {
+          width: 100%;
+          height: 500px;
+          object-fit: cover;
+        }
+        >a {
+          >img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+    
+    .carousel{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .item {
+      h3 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 2rem;
+      }
+    }
+
+    .element1 {
+      top: 200px;
+      left: 140px;
+      h2 {
+        font-size: 8rem;
+      }
+      p {
+        font-size: 4rem;
+      }
+    }
+
+    .element3 {
+      top: 200px;
+      left: 870px;
+      img {
+        width: 120%;
+        height: 400px;
+      }
+    }
+
+    .element2{
+        top: 430px;
+        left: 800px;
+    }
+    
+}
+
+/*CAFETERIA*/
+  /*MEDIA QUERIES*/
+
+
+  @media screen and (width < 768px  ) {
+    .sidebar{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .container-principal-cafe{
+        display: grid;
+        grid-template-columns: 20% 80%;
+    }
+    
+    .sidebar{
+        padding-left: 3rem;
+    }
+
+    .grilla-productos-cafe{
+        grid-template-columns: repeat(3, 30%);     
+    }
+}
+
+@media screen and (min-width: 992px){
+    .container-principal-cafe{
+        grid-template-columns: 10% 90%;
+       
+    }
+
+    .grilla-productos-cafe{
+        grid-template-columns: repeat(4, 20%);   
+           
+    }
+
+    .sidebar{
+        padding-left: 3rem;
+    }
+
+    .submit{
+        font-size: 1.5rem;
+    }
+    .cantidad-productos {
+        font-size: 1.5rem;
+    }
+}
+
+/**MEDIA QUERIES CONTACTO*/
+@media screen and (min-width: 992px){
+    .contacto-bg{   
+        height: 30rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    } 
+    .formulario {
+        margin: -5rem auto 0 auto;
+        width: 50%;
+        padding: 5rem;
+    }
+    
+    .campo {
+        margin-bottom: 2rem;
+    }
+    
+    
+    .campo-field-textarea{
+         height: 20rem;
+    
+    }
+
+    .boton {
+        padding: 1rem 3rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        
+    }
+    .boton-primario {
+        padding: 1rem;
+    
+    }
+    
+
+}
+
+/*MEDIA QUERIES CURSOS Y CATAS*/
+
+@media screen and (min-width: 480px){
+    .contenedor {
+    grid-template-columns: 90%;
+}
+}
+
+@media screen and (min-width: 768px){
+    .contenedor {
+        grid-template-columns: 80%;
+        
+        &__curso__informacion{
+        h3{
+        font-size: 3rem;
+    }
+        p {
+         font-size: 2rem;
+    }
+    } 
+    }
+    .curso__submit{
+         font-size: 2rem;
+    }
+}
+
+
+@media screen and (min-width: 992px){
+    .contenedor {
+        grid-template-columns: 60%;
+        
+        &__curso__informacion{
+        h3{
+        font-size: 3rem;
+    }
+        p {
+        font-size: 2rem;
+    }
+    }
+    }
+    .curso__submit{
+        font-size: 2rem;
+    }  
+}
+
+/*MEDIA QUERIES PASTELERIA*/
+@media screen and (min-width: 480px) {
+    .grilla-productos-pasteleria{
+        grid-template-columns: repeat(3, 30%);  
+        gap: 2rem;     
+    }
+}
+
+@media screen and (min-width: 768px){
+    .container-principal-pasteleria{
+        display: grid;
+        grid-template-columns: 5% 95%;
+    }
+    .grilla-productos-pasteleria{
+    grid-template-columns: repeat(3, 30%);  
+   
+}
+}
+
+@media screen and (min-width: 992px){
+    .container-principal-pasteleria{
+        display: grid;
+        grid-template-columns: 10% 90%;
+        padding-left: 3rem;
+    }
+    .grilla-productos-pasteleria{
+        grid-template-columns: repeat(4, 20%);   
+           
+    }
+    
+    .grilla-producto-pasteleria:hover{
+        transform: scale(1.3);
+    }
+}
+
+

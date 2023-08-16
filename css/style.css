@@ -187,6 +187,7 @@ p {
 .element3 {
   top: 200px;
   left: 100px;
+  overflow: hidden;
 }
 .element3 img {
   width: 100%;
@@ -238,7 +239,258 @@ p {
   display: flex;
 }
 
+/*CAFE, PASTELERIA,CURSOS Y CATAS, CONTACTO*/
+.titulo {
+  color: #4b6246;
+  text-align: center;
+  font-size: 3rem;
+  padding: 3rem 3rem 0 3rem;
+}
+
+/*COSAS EN COMUN PAG CAFE Y PASTELERIA*/
+.producto-informacion {
+  background-color: #f6f6f4;
+}
+.producto-informacion p {
+  font-size: 1.5rem;
+  font-family: "League Spartan", sans-serif;
+  text-align: center;
+}
+.producto-informacion h2 {
+  font-size: 1.5rem;
+  font-family: "League Spartan", sans-serif;
+  text-align: center;
+}
+
+.cantidad-productos {
+  border: solid #4b6246;
+  background-color: #f6f6f4;
+  color: #4b6246;
+  font-size: 1.3rem;
+  font-family: "League Spartan", sans-serif;
+  text-align: center;
+  padding: 1rem;
+  appearance: none;
+}
+
+.sidebar {
+  /*modificar para que me abra una ventana emergente al dar click a filtro*/
+  text-align: center;
+}
+.sidebar h2 {
+  font-family: "League Spartan", sans-serif;
+  font-size: 2rem;
+  text-align: start;
+}
+.sidebar p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  text-align: start;
+}
+
+.list-cafeteria {
+  list-style-type: none;
+  display: grid;
+  gap: 2rem;
+  padding-left: 0;
+}
+
+.filtro-submit {
+  background-color: #ffffff;
+  border-color: #000000;
+  border-radius: 5%;
+  font-size: 1.5rem;
+  font-family: "League Spartan", sans-serif;
+  padding: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+.filtro-submit:hover {
+  cursor: pointer;
+  background-color: #ccab95;
+}
+
+.grilla-productos-cafe {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 4rem;
+}
+
+.grilla-producto-cafe p, input {
+  width: 100%;
+}
+
+.grilla-producto-cafe img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.submit {
+  background-color: #ccab95;
+  border-color: #8c522c;
+  border-radius: 5%;
+  font-size: 1.3rem;
+  font-family: "League Spartan", sans-serif;
+  padding: 1rem;
+  transition: background-color 0.5s ease;
+}
+.submit:hover {
+  cursor: pointer;
+  background-color: #f6f6f4;
+}
+
+.grilla-productos-pasteleria {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 3rem;
+}
+
+.grilla-producto-pasteleria p, .grilla-producto-pasteleria input {
+  width: 100%;
+}
+.grilla-producto-pasteleria img {
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 10px 10px 20px #4b6246;
+}
+.grilla-producto-pasteleria:hover {
+  transform: scale(1.2);
+}
+
+/*PAGINA DE CURSOS Y CATAS*/
+.contenedor {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  gap: 3rem;
+}
+.contenedor__curso {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  border-bottom: 1.5px solid #4b6246;
+  border-bottom-right-radius: 15%;
+  border-bottom-left-radius: 5%;
+  border-bottom-style: groove;
+  border-top: 1.5px solid #4b6246;
+  border-top-right-radius: 5%;
+  border-top-left-radius: 15%;
+  border-top-style: groove;
+}
+.contenedor__curso__informacion {
+  padding: 2rem 2rem 0 2rem;
+}
+.contenedor__curso__informacion p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.contenedor__curso__informacion h3 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.contenedor__curso__imagen {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor__curso__imagen img {
+  width: 40%;
+}
+
+.descripcion-curso p {
+  text-align: justify;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.curso__submit {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1rem 1rem 1rem;
+  border-radius: 5%;
+  border-color: #8c522c;
+  font-size: 1.5rem;
+  font-family: "League Spartan", sans-serif;
+}
+.curso__submit input {
+  background-color: #ccab95;
+}
+.curso__submit:hover {
+  cursor: pointer;
+}
+
+.contacto-bg {
+  background-image: url(../assets/img/contacto.jpg);
+  height: 20rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+}
+
+.formulario {
+  background-color: #ffffff;
+  margin: -7rem auto 0 auto;
+  width: 80%;
+  padding: 2rem;
+}
+
+.campo {
+  display: flex;
+  margin-bottom: 1rem;
+  text-align: right;
+}
+
+.campo-label {
+  font-size: 1.5rem;
+  flex: 0 0 9rem;
+  padding-right: 2rem;
+}
+
+.campo-field {
+  font-size: 1.5rem;
+  flex: 1;
+}
+
+.campo-field-textarea {
+  height: 15rem;
+}
+
+.boton {
+  display: block;
+  font-family: "League Spartan", sans-serif;
+  color: #4b6246;
+  text-align: center;
+  padding: 1rem 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+  border: none;
+}
+.boton:hover {
+  cursor: pointer;
+}
+
+.boton-primario {
+  background-color: #f6f6f4;
+}
+
 /*MEDIA QUERIES*/
+/*INDEX*/
 @media screen and (min-width: 480px) {
   .bg {
     padding-top: 5rem;
@@ -374,7 +626,7 @@ p {
   }
   .element3 {
     top: 200px;
-    left: 970px;
+    left: 870px;
   }
   .element3 img {
     width: 120%;
@@ -382,112 +634,10 @@ p {
   }
   .element2 {
     top: 430px;
-    left: 900px;
+    left: 800px;
   }
 }
-/*CAFE, PASTELERIA,CURSOS Y CATAS, CONTACTO*/
-.titulo {
-  color: #4b6246;
-  text-align: center;
-  font-size: 3rem;
-  padding: 3rem 3rem 0 3rem;
-}
-
-/*COSAS EN COMUN PAG CAFE Y PASTELERIA*/
-.producto-informacion {
-  background-color: #f6f6f4;
-}
-.producto-informacion p {
-  font-size: 1.5rem;
-  font-family: "League Spartan", sans-serif;
-  text-align: center;
-}
-.producto-informacion h2 {
-  font-size: 1.5rem;
-  font-family: "League Spartan", sans-serif;
-  text-align: center;
-}
-
-.cantidad-productos {
-  border: solid #4b6246;
-  background-color: #f6f6f4;
-  color: #4b6246;
-  font-size: 1.3rem;
-  font-family: "League Spartan", sans-serif;
-  text-align: center;
-  padding: 1rem;
-  appearance: none;
-}
-
-.sidebar {
-  /*modificar para que me abra una ventana emergente al dar click a filtro*/
-  text-align: center;
-}
-.sidebar h2 {
-  font-family: "League Spartan", sans-serif;
-  font-size: 2rem;
-  text-align: start;
-}
-.sidebar p {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
-  text-align: start;
-}
-
-.list-cafeteria {
-  list-style-type: none;
-  display: grid;
-  gap: 2rem;
-  padding-left: 0;
-}
-
-.filtro-submit {
-  background-color: #ffffff;
-  border-color: #000000;
-  border-radius: 5%;
-  font-size: 1.5rem;
-  font-family: "League Spartan", sans-serif;
-  padding: 0.5rem;
-  transition: background-color 0.3s ease;
-}
-.filtro-submit:hover {
-  cursor: pointer;
-  background-color: #ccab95;
-}
-
-.grilla-productos-cafe {
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-  grid-template-rows: auto;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  margin: 4rem;
-}
-
-.grilla-producto-cafe p, input {
-  width: 100%;
-}
-
-.grilla-producto-cafe img {
-  width: 100%;
-  object-fit: cover;
-}
-
-.submit {
-  background-color: #ccab95;
-  border-color: #8c522c;
-  border-radius: 5%;
-  font-size: 1.3rem;
-  font-family: "League Spartan", sans-serif;
-  padding: 1rem;
-  transition: background-color 0.5s ease;
-}
-.submit:hover {
-  cursor: pointer;
-  background-color: #f6f6f4;
-}
-
+/*CAFETERIA*/
 /*MEDIA QUERIES*/
 @media screen and (width < 768px) {
   .sidebar {
@@ -523,126 +673,35 @@ p {
     font-size: 1.5rem;
   }
 }
-.grilla-productos-pasteleria {
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-  grid-template-rows: auto;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  margin: 3rem;
-}
-
-.grilla-producto-pasteleria p, .grilla-producto-pasteleria input {
-  width: 100%;
-}
-.grilla-producto-pasteleria img {
-  width: 100%;
-  object-fit: cover;
-  box-shadow: 10px 10px 20px #4b6246;
-}
-.grilla-producto-pasteleria:hover {
-  transform: scale(1.2);
-}
-
-/*MEDIA QUERIES*/
-@media screen and (min-width: 480px) {
-  .grilla-productos-pasteleria {
-    grid-template-columns: repeat(3, 30%);
-    gap: 2rem;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container-principal-pasteleria {
-    display: grid;
-    grid-template-columns: 5% 95%;
-  }
-  .grilla-productos-pasteleria {
-    grid-template-columns: repeat(3, 30%);
-  }
-}
+/**MEDIA QUERIES CONTACTO*/
 @media screen and (min-width: 992px) {
-  .container-principal-pasteleria {
-    display: grid;
-    grid-template-columns: 10% 90%;
-    padding-left: 3rem;
+  .contacto-bg {
+    height: 30rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
-  .grilla-productos-pasteleria {
-    grid-template-columns: repeat(4, 20%);
+  .formulario {
+    margin: -5rem auto 0 auto;
+    width: 50%;
+    padding: 5rem;
   }
-  .grilla-producto-pasteleria:hover {
-    transform: scale(1.3);
+  .campo {
+    margin-bottom: 2rem;
+  }
+  .campo-field-textarea {
+    height: 20rem;
+  }
+  .boton {
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  .boton-primario {
+    padding: 1rem;
   }
 }
-/*PAGINA DE CURSOS Y CATAS*/
-.contenedor {
-  width: 100%;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  grid-template-columns: 100%;
-  grid-template-rows: auto;
-  gap: 3rem;
-}
-.contenedor__curso {
-  padding-bottom: 2rem;
-  padding-top: 2rem;
-  border-bottom: 1.5px solid #4b6246;
-  border-bottom-right-radius: 15%;
-  border-bottom-left-radius: 5%;
-  border-bottom-style: groove;
-  border-top: 1.5px solid #4b6246;
-  border-top-right-radius: 5%;
-  border-top-left-radius: 15%;
-  border-top-style: groove;
-}
-.contenedor__curso__informacion {
-  padding: 2rem 2rem 0 2rem;
-}
-.contenedor__curso__informacion p {
-  text-align: center;
-  font-size: 1.5rem;
-}
-.contenedor__curso__informacion h3 {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: bold;
-}
-.contenedor__curso__imagen {
-  padding-top: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.contenedor__curso__imagen img {
-  width: 40%;
-}
-
-.descripcion-curso p {
-  text-align: justify;
-  padding-right: 2rem;
-  padding-left: 2rem;
-}
-
-.curso__submit {
-  width: 100%;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem 1rem 1rem 1rem;
-  border-radius: 5%;
-  border-color: #8c522c;
-  font-size: 1.5rem;
-  font-family: "League Spartan", sans-serif;
-}
-.curso__submit input {
-  background-color: #ccab95;
-}
-.curso__submit:hover {
-  cursor: pointer;
-}
-
-/*MEDIA QUERIES*/
+/*MEDIA QUERIES CURSOS Y CATAS*/
 @media screen and (min-width: 480px) {
   .contenedor {
     grid-template-columns: 90%;
@@ -676,89 +735,33 @@ p {
     font-size: 2rem;
   }
 }
-.contacto-bg {
-  background-image: url(../assets/img/contacto.jpg);
-  height: 20rem;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  margin-top: 2rem;
+/*MEDIA QUERIES PASTELERIA*/
+@media screen and (min-width: 480px) {
+  .grilla-productos-pasteleria {
+    grid-template-columns: repeat(3, 30%);
+    gap: 2rem;
+  }
 }
-
-.formulario {
-  background-color: #ffffff;
-  margin: -7rem auto 0 auto;
-  width: 80%;
-  padding: 2rem;
+@media screen and (min-width: 768px) {
+  .container-principal-pasteleria {
+    display: grid;
+    grid-template-columns: 5% 95%;
+  }
+  .grilla-productos-pasteleria {
+    grid-template-columns: repeat(3, 30%);
+  }
 }
-
-.campo {
-  display: flex;
-  margin-bottom: 1rem;
-  text-align: right;
-}
-
-.campo-label {
-  font-size: 1.5rem;
-  flex: 0 0 9rem;
-  padding-right: 2rem;
-}
-
-.campo-field {
-  font-size: 1.5rem;
-  flex: 1;
-}
-
-.campo-field-textarea {
-  height: 15rem;
-}
-
-.boton {
-  display: block;
-  font-family: "League Spartan", sans-serif;
-  color: #4b6246;
-  text-align: center;
-  padding: 1rem 1rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 2rem;
-  border: none;
-}
-.boton:hover {
-  cursor: pointer;
-}
-
-.boton-primario {
-  background-color: #f6f6f4;
-}
-
-/**MEDIA QUERIES*/
 @media screen and (min-width: 992px) {
-  .contacto-bg {
-    height: 30rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+  .container-principal-pasteleria {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    padding-left: 3rem;
   }
-  .formulario {
-    margin: -5rem auto 0 auto;
-    width: 50%;
-    padding: 5rem;
+  .grilla-productos-pasteleria {
+    grid-template-columns: repeat(4, 20%);
   }
-  .campo {
-    margin-bottom: 2rem;
-  }
-  .campo-field-textarea {
-    height: 20rem;
-  }
-  .boton {
-    padding: 1rem 3rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-bottom: 2rem;
-  }
-  .boton-primario {
-    padding: 1rem;
+  .grilla-producto-pasteleria:hover {
+    transform: scale(1.3);
   }
 }
 
