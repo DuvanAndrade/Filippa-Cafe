@@ -28,9 +28,9 @@
         text-align: center;
         font-size: 1.5rem;
     }
-        h3{
+        h2{
         text-align: center;
-        font-size: 2rem;
+        font-size: 3rem;
         font-weight: bold;
     }
     }
@@ -43,6 +43,7 @@
     
         img{
         width: 40%;
+        border-radius: 15px;
 }
 }
 }
@@ -68,5 +69,44 @@
     &:hover {
     cursor: pointer;  
 }
+}
+
+.btn{
+    padding-left: 2rem;
+    font-family: $fuenteCuerpo;
+    font-size: 1.5rem;
+    color: $verde;
+    justify-content: end;
+    font-weight: bold;
+}
+
+.modal-title{
+    color: $verde;
+    font-size: 3rem;
+}
+.modal-body{
+    font-family: $fuenteCuerpo;
+    p{
+        text-align: justify;
+        font-size: 1rem;
+    }
+    li{
+        font-size: 2rem;
+    }
+    h2{
+        color: $verde;
+        font-weight: bold;
+        text-align: start;
+        font-size: 2rem;
+    }
+}
+.modal-content{
+    background-image: url(../assets/img/coffe_branch_2.png);
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
 }
 

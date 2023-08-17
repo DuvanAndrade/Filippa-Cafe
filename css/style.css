@@ -198,6 +198,7 @@ p {
   width: 100%;
   height: 300px;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .element2 {
@@ -331,6 +332,7 @@ p {
 .grilla-producto-cafe img {
   width: 100%;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .submit {
@@ -364,6 +366,7 @@ p {
   width: 100%;
   object-fit: cover;
   box-shadow: 10px 10px 20px #4b6246;
+  border-radius: 15px;
 }
 .grilla-producto-pasteleria:hover {
   transform: scale(1.2);
@@ -398,9 +401,9 @@ p {
   text-align: center;
   font-size: 1.5rem;
 }
-.contenedor__curso__informacion h3 {
+.contenedor__curso__informacion h2 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
 }
 .contenedor__curso__imagen {
@@ -411,6 +414,7 @@ p {
 }
 .contenedor__curso__imagen img {
   width: 40%;
+  border-radius: 15px;
 }
 
 .descripcion-curso p {
@@ -435,6 +439,47 @@ p {
 }
 .curso__submit:hover {
   cursor: pointer;
+}
+
+.btn {
+  padding-left: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: #4b6246;
+  justify-content: end;
+  font-weight: bold;
+}
+
+.modal-title {
+  color: #4b6246;
+  font-size: 3rem;
+}
+
+.modal-body {
+  font-family: "Roboto", sans-serif;
+}
+.modal-body p {
+  text-align: justify;
+  font-size: 1rem;
+}
+.modal-body li {
+  font-size: 2rem;
+}
+.modal-body h2 {
+  color: #4b6246;
+  font-weight: bold;
+  text-align: start;
+  font-size: 2rem;
+}
+
+.modal-content {
+  background-image: url(../assets/img/coffe_branch_2.png);
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
 }
 
 .contacto-bg {

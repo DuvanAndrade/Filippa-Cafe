@@ -1,209 +1,673 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- #region el shortcut es para ponerle img a la pensataña de navegacion-->
-    <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="../assets/img/logo.png"
+      type="image/x-icon"
+    />
     <!-- Googles fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;800&family=Roboto:wght@300;400&display=swap" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;800&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
 
     <!--Enlazando boostrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
 
     <!-- #region enlazando css-->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Filippa Café</title>
-    
-
-
-</head>
-<body>
-
-  <header>
-
-    <nav class="navbar bg-nav-personalizado navbar-expand-sm m-0">
-      <div class="container-fluid">
-        <a  href="../index.html">
-          <img class="logo ps-3" src="../assets/img/logo.png" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          
-          <div class="offcanvas-body bar pe-3">
-            <ul class="navbar-nav bar ps-5 grid gap-4 ">
-              <li><a class="nav-link text-decoration-none " href="../index.html">Inicio</a></li>
-              <li><a class="nav-link text-decoration-none" href="cafeteria.html">Cafeteria</a></li>
-              <li><a class="nav-link text-decoration-none" href="pasteleria.html">Pasteleria</a></li>
-              <li><a class="nav-link text-decoration-none" href="cursosCatas.html">Cursos y Catas</a></li>
-              <li><a class="nav-link text-decoration-none" href="contacto.html">Contacto</a></li>
-              
-            </ul>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar bg-nav-personalizado navbar-expand-sm m-0">
+        <div class="container-fluid">
+          <a href="../index.html">
+            <img class="logo ps-3" src="../assets/img/logo.png" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-body bar pe-3">
+              <ul class="navbar-nav bar ps-5 grid gap-4">
+                <li>
+                  <a class="nav-link text-decoration-none" href="../index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-link text-decoration-none" href="cafeteria.html"
+                    >Cafeteria</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="nav-link text-decoration-none"
+                    href="pasteleria.html"
+                    >Pasteleria</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="nav-link text-decoration-none"
+                    href="cursosCatas.html"
+                    >Cursos y Catas</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-link text-decoration-none" href="contacto.html"
+                    >Contacto</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
-
+      </nav>
     </header>
 
     <main>
-
       <div class="titulo">
         <h1>Nuestros Cursos</h1>
       </div>
-      
+
       <div class="contenedor">
-      <div class="contenedor__curso">
-        <div class="contenedor__curso__imagen">
-            <img src="../assets/img/cursos/curso2.png" alt="Imagen del curso">
-        </div>
-        <div class="contenedor__curso__informacion">
-            <h3>Barista y Arte Latte</h3>
-            <p><b>Precio:</b> Gratis</p>
-            <p><b>Cupo:</b> 20</p> <br>
-            <div class="descripcion-curso">
-            <p>
-                Donec tempor, nisl et rhoncus viverra, turpis enim convallis ligula, non hendrerit nulla tortor nec odio. Morbi non mattis nunc, elementum auctor arcu. Aliquam vestibulum arcu non sem porta auctor. Nam vel congue ligula, eu condimentum felis. Nunc aliquam hendrerit odio sit amet venenatis. Nunc varius, libero a tempor rutrum, nulla risus congue velit, nec suscipit nibh lectus ac dolor. Nulla facilisi.
-            </p>
+<!--CURSO 1-->
+        <div class="contenedor__curso">
+          <div class="contenedor__curso__imagen">
+            <img src="../assets/img/cursos/curso2.png" alt="Imagen del curso" />
           </div>
-        </div> 
-        <div class="curso__submit">
-          <input class="curso__submit" type="submit" value="Agregar al Carrito">
-        </div>
-      </div>
-
-      <div class="contenedor__curso">
-        <div class="contenedor__curso__imagen">
-            <img src="../assets/img/cursos/filtrado.png" alt="Imagen del curso">
-        </div>
-        <div class="contenedor__curso__informacion">
-            <h3>Especialización Café Filtrados</h3>
-            <p><b>Precio:</b> Gratis</p>
-            <p><b>Cupo:</b> 20</p> <br>
+          <div class="contenedor__curso__informacion">
+            <h2>Barista y Arte Latte</h2>
+            <p><strong>Precio:</strong> Gratis</p>
+            <p><b>Cupo:</b> 20</p>
+            <br />
             <div class="descripcion-curso">
-            <p>
-                Donec tempor, nisl et rhoncus viverra, turpis enim convallis ligula, non hendrerit nulla tortor nec odio. Morbi non mattis nunc, elementum auctor arcu. Aliquam vestibulum arcu non sem porta auctor. Nam vel congue ligula, eu condimentum felis. Nunc aliquam hendrerit odio sit amet venenatis. Nunc varius, libero a tempor rutrum, nulla risus congue velit, nec suscipit nibh lectus ac dolor. Nulla facilisi.
-            </p>
+              <p>
+                En este curso intensivo de Barista y Arte Latte, te sumergirás
+                en los fundamentos y las técnicas avanzadas que definen a un
+                barista experto. Desde los conceptos básicos del café hasta las
+                habilidades de diseño artístico en la leche vaporizada, te
+                llevaremos desde cero hasta convertirte en un maestro del arte
+                latte.
+              </p>
+              <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
+              Más Información ...
+            </button>
+            </div>
+            
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="staticBackdrop"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title " id="staticBackdropLabel">
+                      Barista y Arte Latte
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>¿Eres un amante del café apasionado por explorar los
+                    secretos detrás de una taza perfecta? ¡Nuestro emocionante
+                    Curso de Barista y Arte Latte está diseñado para llevarte a
+                    un viaje único hacia el mundo del café de alta calidad y la
+                    creatividad artística en cada taza!</p>
+                    <h2>Descripción del Curso:</h2>
+                    <p>En este curso intensivo de Barista y Arte Latte, te
+                    sumergirás en los fundamentos y las técnicas avanzadas que
+                    definen a un barista experto. Desde los conceptos básicos
+                    del café hasta las habilidades de diseño artístico en la
+                    leche vaporizada, te llevaremos desde cero hasta convertirte
+                    en un maestro del arte latte.</p>
+                    <h2>Lo que Aprenderás:</h2>
+                    <ol>
+                    <li>Introducción al Café: Aprende sobre la historia del café,
+                    las variedades de granos, regiones productoras y cómo
+                    influyen en el sabor final de la bebida.</li>
+                    <li>Preparación del
+                    Espresso: Domina la máquina de espresso: molienda,
+                    dosificación, tamping y extracción para obtener el espresso
+                    perfecto en cada taza.</li>
+                    <li>Técnicas de Vaporización de Leche:
+                    Descubre cómo texturizar la leche para crear una microespuma
+                    suave y sedosa, fundamental para la preparación de bebidas
+                    de café con leche.</li>
+                    <li>Creación de Diseños en el Café: Explora
+                    el mundo del arte latte y aprende a verter y dibujar
+                    hermosos diseños en la superficie de tus lattes y
+                    cappuccinos, desde corazones hasta rosetas y más.</li>
+                    </ol>
+                    <h2>Certificación:</h2>
+                    <p>Al completar con éxito este curso, recibirás una certificación de Barista y Arte Latte que validará tus habilidades y conocimientos en la preparación de café de alta calidad y la creación de diseños artísticos en la leche vaporizada.</p>
+                    
+                       
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn"
+                      data-bs-dismiss="modal"
+                    >
+                      Cerrar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div> 
-        <div class="curso__submit">
-          <input class="curso__submit" type="submit" value="Agregar al Carrito">
+          <div class="curso__submit">
+            <input
+              class="curso__submit"
+              type="submit"
+              value="Agregar al Carrito"
+            />
+          </div>
         </div>
-      </div>
-
-
-      <div class="contenedor__curso">
-        <div class="contenedor__curso__imagen">
-            <img src="../assets/img/cursos/curso1.png" alt="Imagen del curso">
-        </div>
-        <div class="contenedor__curso__informacion">
-            <h3>Especializacion en Arte Latte</h3>
+<!--CURSO 2-->
+        <div class="contenedor__curso">
+          <div class="contenedor__curso__imagen">
+            <img
+              src="../assets/img/cursos/filtrado.png"
+              alt="Imagen del curso"
+            />
+          </div>
+          <div class="contenedor__curso__informacion">
+            <h2>Especialización Café Filtrados</h2>
             <p><b>Precio:</b> Gratis</p>
-            <p><b>Cupo:</b> 20</p> <br>
+            <p><b>Cupo:</b> 20</p>
+            <br />
             <div class="descripcion-curso">
-            <p>
-                Donec tempor, nisl et rhoncus viverra, turpis enim convallis ligula, non hendrerit nulla tortor nec odio. Morbi non mattis nunc, elementum auctor arcu. Aliquam vestibulum arcu non sem porta auctor. Nam vel congue ligula, eu condimentum felis. Nunc aliquam hendrerit odio sit amet venenatis. Nunc varius, libero a tempor rutrum, nulla risus congue velit, nec suscipit nibh lectus ac dolor. Nulla facilisi.
-            </p>
+              <p>
+                Este curso de especialización está diseñado para aquellos que desean dominar la magia de los métodos de filtrado y descubrir la riqueza de sabores y aromas que los granos de café pueden ofrecer. Aprenderás técnicas avanzadas de preparación y degustación, convirtiéndote en un experto en café filtrado.
+              </p>
+              <!-- Button trigger modal -->
+            <button
+            type="button"
+            class="btn"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop1"
+          >
+            Más Información ...
+          </button>
+            </div>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="staticBackdrop1"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel1"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title " id="staticBackdropLabel1">
+                      Especialización Café Filtrados
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Si buscas profundizar en el mundo del café más allá del espresso, nuestro apasionante Curso de Especialización en Café Filtrados te sumergirá en la fascinante experiencia de resaltar los matices y sabores únicos de los granos a través de distintos métodos de filtrado.</p>
+                    <h2>Descripción del Curso:</h2>
+                    <p>Este curso de especialización está diseñado para aquellos que desean dominar la magia de los métodos de filtrado y descubrir la riqueza de sabores y aromas que los granos de café pueden ofrecer. Aprenderás técnicas avanzadas de preparación y degustación, convirtiéndote en un experto en café filtrado.</p>
+                    <h2>Lo que Aprenderás:</h2>
+                    <ol>
+                    <li>Variedades de Granos y Orígenes: Explora la diversidad de granos de café y las regiones productoras, comprendiendo cómo influyen en los perfiles de sabor.</li>
+                    <li>Métodos de Filtrado Avanzados: Domina métodos como el pour-over (infusión manual), Aeropress, Chemex y prensa francesa, entendiendo sus diferencias y cómo afectan al resultado final.</li>
+                    <li>Molienda y Extracción: Aprende a ajustar la molienda según el método de filtrado, optimizando la extracción para resaltar los sabores deseados.</li>
+                    <li>Control del Tiempo y Temperatura: Descubre la importancia del tiempo y la temperatura en la preparación de café filtrado y cómo lograr resultados consistentes.</li>
+                    </ol>
+                    <h2>Certificación:</h2>
+                    <p>Al completar con éxito este curso, recibirás una certificación de Barista y Arte Latte que validará tus habilidades y conocimientos en la preparación de café de alta calidad y la creación de diseños artísticos en la leche vaporizada.</p>
+                    
+                       
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn"
+                      data-bs-dismiss="modal"
+                    >
+                      Cerrar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
-        </div> 
-        <div class="curso__submit">
-          <input class="curso__submit" type="submit" value="Agregar al Carrito">
+          <div class="curso__submit">
+            <input
+              class="curso__submit"
+              type="submit"
+              value="Agregar al Carrito"
+            />
+          </div>
         </div>
-      </div>
-
-
-      <div class="contenedor__curso">
-        <div class="contenedor__curso__imagen">
-            <img src="../assets/img/cursos/curso5.png" alt="Imagen del curso">
-        </div>
-        <div class="contenedor__curso__informacion">
-            <h3>Taller Calibración</h3>
+<!--CURSO 3-->
+        <div class="contenedor__curso">
+          <div class="contenedor__curso__imagen">
+            <img src="../assets/img/cursos/curso1.png" alt="Imagen del curso" />
+          </div>
+          <div class="contenedor__curso__informacion">
+            <h2>Especializacion en Arte Latte</h2>
             <p><b>Precio:</b> Gratis</p>
-            <p><b>Cupo:</b> 20</p> <br>
+            <p><b>Cupo:</b> 20</p>
+            <br />
             <div class="descripcion-curso">
-            <p>
-                Donec tempor, nisl et rhoncus viverra, turpis enim convallis ligula, non hendrerit nulla tortor nec odio. Morbi non mattis nunc, elementum auctor arcu. Aliquam vestibulum arcu non sem porta auctor. Nam vel congue ligula, eu condimentum felis. Nunc aliquam hendrerit odio sit amet venenatis. Nunc varius, libero a tempor rutrum, nulla risus congue velit, nec suscipit nibh lectus ac dolor. Nulla facilisi.
-            </p>
+              <p>
+                Este curso de especialización está diseñado para aquellos que desean dominar las habilidades avanzadas del arte latte y elevar la presentación de sus bebidas a un nivel artístico. Aprenderás técnicas innovadoras para crear diseños impresionantes que cautivarán a los amantes del café y a quienes buscan experiencias visuales únicas.
+              </p>
+               <!-- Button trigger modal -->
+            <button
+            type="button"
+            class="btn"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop2"
+          >
+            Más Información ...
+          </button>
+            </div>
+             <!-- Modal -->
+             <div
+             class="modal fade"
+             id="staticBackdrop2"
+             data-bs-backdrop="static"
+             data-bs-keyboard="false"
+             tabindex="-1"
+             aria-labelledby="staticBackdropLabel2"
+             aria-hidden="true"
+           >
+             <div class="modal-dialog modal-xl modal-dialog-scrollable">
+               <div class="modal-content">
+                 <div class="modal-header">
+                   <h1 class="modal-title " id="staticBackdropLabel2">
+                    Especialización en Arte Latte
+                   </h1>
+                   <button
+                     type="button"
+                     class="btn-close"
+                     data-bs-dismiss="modal"
+                     aria-label="Close"
+                   ></button>
+                 </div>
+                 <div class="modal-body">
+                   <p>Si eres un amante del café que busca llevar la creatividad al siguiente nivel, nuestro Curso de Especialización en Arte Latte te sumergirá en el emocionante mundo de la creación artística en cada taza. Descubre cómo transformar el café en verdaderas obras de arte visuales y deleita a los sentidos de tus clientes.</p>
+                   <h2>Descripción del Curso:</h2>
+                   <p>Este curso de especialización está diseñado para aquellos que desean dominar las habilidades avanzadas del arte latte y elevar la presentación de sus bebidas a un nivel artístico. Aprenderás técnicas innovadoras para crear diseños impresionantes que cautivarán a los amantes del café y a quienes buscan experiencias visuales únicas.</p>
+                   <h2>Lo que Aprenderás:</h2>
+                   <ol>
+                   <li>Fundamentos del Arte Latte: Comprende las bases del arte latte, desde la preparación de la leche hasta el control del flujo al verter, y cómo crear la base perfecta para tus diseños.</li>
+                   <li>Diseños Clásicos y Avanzados: Aprende a crear desde los diseños básicos, como corazones y rosetas, hasta diseños más elaborados como tulipanes, cisnes y más.</li>
+                   <li>Creación de Diseños Personalizados: Desarrolla tu estilo único al crear diseños personalizados que se adapten a las preferencias y ocasiones de tus clientes.</li>
+                   <li>Presentación de Impacto: Aprende a presentar tus bebidas con arte latte de manera impresionante, incorporando técnicas de vertido y posicionamiento para sorprender a tus clientes.</li>
+                   </ol>
+                   <h2>Certificación:</h2>
+                   <p>Al completar con éxito este curso de especialización, recibirás una certificación en Arte Latte que autentificará tus habilidades y te calificará para deleitar a tus clientes con bebidas que son verdaderas obras maestras.</p>
+                   
+                      
+                 </div>
+                 <div class="modal-footer">
+                   <button
+                     type="button"
+                     class="btn"
+                     data-bs-dismiss="modal"
+                   >
+                     Cerrar
+                   </button>
+                 </div>
+               </div>
+             </div>
+           </div>
           </div>
-        </div> 
-        <div class="curso__submit">
-          <input class="curso__submit" type="submit" value="Agregar al Carrito">
+          <div class="curso__submit">
+            <input
+              class="curso__submit"
+              type="submit"
+              value="Agregar al Carrito"
+            />
+          </div>
+        </div>
+<!--CURSO 4-->
+        <div class="contenedor__curso">
+          <div class="contenedor__curso__imagen">
+            <img src="../assets/img/cursos/curso5.png" alt="Imagen del curso" />
+          </div>
+          <div class="contenedor__curso__informacion">
+            <h2>Taller Calibración</h2>
+            <p><b>Precio:</b> Gratis</p>
+            <p><b>Cupo:</b> 20</p>
+            <br />
+            <div class="descripcion-curso">
+              <p>
+                Este taller práctico y enfocado está diseñado para baristas y amantes del café que desean dominar las habilidades de calibración y ajuste de máquinas de espresso. Explorarás los intrincados detalles detrás de la preparación del café perfecto y cómo garantizar una extracción consistente en cada taza.
+              </p>
+              <button
+            type="button"
+            class="btn"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop3"
+          >
+            Más Información ...
+          </button>
+            </div>
+            <!-- Modal -->
+            <div
+            class="modal fade"
+            id="staticBackdrop3"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel3"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title " id="staticBackdropLabel3">
+                    Taller Calibración
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>Si eres un apasionado del café y te obsesiona lograr la taza perfecta, nuestro Taller de Calibración de Máquinas de Café es tu puerta de entrada a la excelencia en la extracción. Aprende las técnicas esenciales para ajustar y calibrar máquinas de espresso, asegurando que cada taza que prepares sea un verdadero deleite.</p>
+                  <h2>Descripción del Curso:</h2>
+                  <p>Este taller práctico y enfocado está diseñado para baristas y amantes del café que desean dominar las habilidades de calibración y ajuste de máquinas de espresso. Explorarás los intrincados detalles detrás de la preparación del café perfecto y cómo garantizar una extracción consistente en cada taza.</p>
+                  <h2>Lo que Aprenderás:</h2>
+                  <ol>
+                  <li>Componentes de la Máquina de Espresso: Desglosa y comprende las partes clave de una máquina de espresso y cómo cada componente influye en la extracción.</li>
+                  <li>Ajuste de la Molienda: Aprende a calibrar el molino de café para obtener la molienda ideal, teniendo en cuenta factores como el tiempo de extracción y el tamaño de la partícula.</li>
+                  <li>Extracción Óptima: Descubre los conceptos detrás de una extracción perfecta, incluyendo la dosificación, el tamping, la presión y el tiempo, para obtener un espresso equilibrado.</li>
+                  <li>Perfil de Sabor Deseado: Aprende a adaptar la calibración según los perfiles de sabor que deseas resaltar en tu espresso, ya sea acidez, dulzura o cuerpo.</li>
+                  <li>Solución de Problemas: Domina la capacidad de identificar y solucionar problemas comunes relacionados con la extracción, como canales en el puck de café y fluctuaciones de presión.</li>
+                  </ol>
+                  <h2>Certificación:</h2>
+                  <p>Al completar el Taller de Calibración de Máquinas de Café, recibirás una certificación que reconoce tu competencia en la calibración de máquinas de espresso y tu capacidad para crear extracciones consistentes y deliciosas.</p>
+                  
+                     
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn"
+                    data-bs-dismiss="modal"
+                  >
+                    Cerrar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="curso__submit">
+            <input
+              class="curso__submit"
+              type="submit"
+              value="Agregar al Carrito"
+            />
+          </div>
         </div>
       </div>
-      </div>
-      
+
       <div class="titulo">
         <h1>Nuestras Catas</h1>
       </div>
-     
+
       <div class="contenedor">
+<!--CATA 1-->
         <div class="contenedor__curso">
           <div class="contenedor__curso__imagen">
-              <img src="../assets/img/cursos/cata1.png" alt="Imagen del curso">
+            <img src="../assets/img/cursos/cata1.png" alt="Imagen del curso" />
           </div>
           <div class="contenedor__curso__informacion">
-              <h3>Cata de Café Verde</h3>
-              <p><b>Precio:</b> Gratis</p>
-              <p><b>Cupo:</b> 20</p> <br>
-              <div class="descripcion-curso">
-              <p>
-                  Donec tempor, nisl et rhoncus viverra, turpis enim convallis ligula, non hendrerit nulla tortor nec odio. Morbi non mattis nunc, elementum auctor arcu. Aliquam vestibulum arcu non sem porta auctor. Nam vel congue ligula, eu condimentum felis. Nunc aliquam hendrerit odio sit amet venenatis. Nunc varius, libero a tempor rutrum, nulla risus congue velit, nec suscipit nibh lectus ac dolor. Nulla facilisi.
+            <h2>Cata de Café Verde</h2>
+            <p><b>Precio:</b> Gratis</p>
+            <p><b>Cupo:</b> 20</p>
+            <br />
+            <div class="descripcion-curso">
+              <p>Este evento exclusivo está diseñado para aquellos que desean explorar los matices y perfiles de sabor que se encuentran en los granos de café verde antes de ser sometidos al proceso de tostado. Experimentarás cómo los factores de origen, variedad y procesamiento interactúan para crear sabores únicos y cómo estos matices pueden influir en el resultado final en la taza.
               </p>
+              <button
+              type="button"
+              class="btn"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop4"
+            >
+              Más Información ...
+            </button>
             </div>
-          </div> 
+            <!-- Modal -->
+            <div
+            class="modal fade"
+            id="staticBackdrop4"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel4"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title " id="staticBackdropLabel4">
+                    Cata de Café Verde
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>Si eres un entusiasta del café en busca de explorar el origen y las complejidades inherentes a los granos antes de ser tostados, nuestra Experiencia de Cata de Café Verde es una oportunidad única para adentrarte en el mundo inexplorado de los sabores crudos y sin desarrollar.</p>
+                  <h2>Descripción del Curso:</h2>
+                  <p>Este evento exclusivo está diseñado para aquellos que desean explorar los matices y perfiles de sabor que se encuentran en los granos de café verde antes de ser sometidos al proceso de tostado. Experimentarás cómo los factores de origen, variedad y procesamiento interactúan para crear sabores únicos y cómo estos matices pueden influir en el resultado final en la taza.</p>
+                  <h2>Lo que Aprenderás:</h2>
+                  <ol>
+                  <li>Degustación de Diferentes Orígenes: Descubre granos de café verde de diferentes regiones productoras, cada uno con su propio perfil de sabor y características únicas.</li>
+                  <li>Variedades de Café: Explora cómo las variedades de café, como Arábica y Robusta, pueden manifestarse en sabores y aromas específicos incluso antes del tostado.</li>
+                  <li>Exploración de Procesamiento: Comprende cómo los métodos de procesamiento, como el lavado o el natural, influyen en los sabores y las características del café verde.</li>
+                  <li>Evaluación Sensorial: Aprende a identificar sabores, aromas y defectos potenciales en los granos de café verde mediante técnicas de catación profesional.</li>
+                  </ol>
+                  <h2>Certificación:</h2>
+                  <p>Al finalizar la Experiencia de Cata de Café Verde, recibirás una certificación que reconoce tu comprensión y capacidad para evaluar y apreciar los sabores y perfiles de sabor del café verde.</p>
+                  
+                     
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn"
+                    data-bs-dismiss="modal"
+                  >
+                    Cerrar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
           <div class="curso__submit">
-            <input class="curso__submit" type="submit" value="Agregar al Carrito">
+            <input
+              class="curso__submit"
+              type="submit"
+              value="Agregar al Carrito"
+            />
           </div>
         </div>
-  
+
         <div class="contenedor__curso">
           <div class="contenedor__curso__imagen">
-              <img src="../assets/img/cursos/cata2.png" alt="Imagen del curso">
+            <img src="../assets/img/cursos/cata2.png" alt="Imagen del curso" />
           </div>
           <div class="contenedor__curso__informacion">
-              <h3>Cata de Café Tostado</h3>
-              <p><b>Precio:</b> Gratis</p>
-              <p><b>Cupo:</b> 20</p> <br>
-              <div class="descripcion-curso">
+            <h2>Cata de Café Tostado</h2>
+            <p><b>Precio:</b> Gratis</p>
+            <p><b>Cupo:</b> 20</p>
+            <br />
+            <div class="descripcion-curso">
               <p>
-                  Donec tempor, nisl et rhoncus viverra, turpis enim convallis ligula, non hendrerit nulla tortor nec odio. Morbi non mattis nunc, elementum auctor arcu. Aliquam vestibulum arcu non sem porta auctor. Nam vel congue ligula, eu condimentum felis. Nunc aliquam hendrerit odio sit amet venenatis. Nunc varius, libero a tempor rutrum, nulla risus congue velit, nec suscipit nibh lectus ac dolor. Nulla facilisi.
+                Este evento cuidadosamente diseñado está destinado a aquellos que desean sumergirse en la riqueza de sabores que los granos de café adquieren después de pasar por el proceso de tostado. Descubrirás cómo los distintos niveles de tostado, el origen y las técnicas de preparación influyen en las complejidades de la bebida final.
               </p>
+              <button
+              type="button"
+              class="btn"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop5"
+            >
+              Más Información ...
+            </button>
             </div>
-          </div> 
+            <!-- Modal -->
+            <div
+            class="modal fade"
+            id="staticBackdrop5"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel5"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title " id="staticBackdropLabel5">
+                    Cata de Café Tostado
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>Si eres un amante del café que busca explorar los diversos matices y aromas que se despliegan después del tostado, nuestra Cata de Café Tostado te llevará en un emocionante viaje sensorial a través de una amplia gama de perfiles de sabor y experiencias aromáticas.</p>
+                  <h2>Descripción del Curso:</h2>
+                  <p>Este evento cuidadosamente diseñado está destinado a aquellos que desean sumergirse en la riqueza de sabores que los granos de café adquieren después de pasar por el proceso de tostado. Descubrirás cómo los distintos niveles de tostado, el origen y las técnicas de preparación influyen en las complejidades de la bebida final.</p>
+                  <h2>Lo que Aprenderás:</h2>
+                  <ol>
+                  <li>Degustación de Diferentes Perfiles de Tostado: Explora una variedad de perfiles de tostado, desde claros y brillantes hasta oscuros y ahumados, y cómo cada uno influye en la taza.</li>
+                  <li>Sabores Originarios: Aprende cómo las características inherentes del grano interactúan con el proceso de tostado para crear perfiles de sabor únicos y variados.</li>
+                  <li>Cuerpo y Acidez: Explora cómo el tostado afecta la textura y el peso en la boca, así como la acidez que da vida a la taza.</li>
+                  <li>Interacción con Expertos: Tendrás la oportunidad de dialogar con expertos en tostado y catación para profundizar en tu comprensión de los perfiles de sabor.</li>
+                  <li>Maridaje de Sabores: Descubre cómo combinar diferentes tipos de café tostado con alimentos para crear experiencias de degustación únicas.</li>
+                  </ol>
+                  <h2>Certificación:</h2>
+                  <p>Al completar la Cata de Café Tostado, recibirás una certificación que valida tus habilidades de evaluación y apreciación de los diversos perfiles de sabor y aromas presentes en el café tostado.</p>
+                  
+                     
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn"
+                    data-bs-dismiss="modal"
+                  >
+                    Cerrar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
           <div class="curso__submit">
-            <input class="curso__submit" type="submit" value="Agregar al Carrito">
+            <input
+              class="curso__submit"
+              type="submit"
+              value="Agregar al Carrito"
+            />
           </div>
         </div>
-        </div>
-       
-
-
-    
-
+      </div>
     </main>
-    
+
     <footer class="container-footer">
       <section>
         <div class="navegacion-footer">
           <h2>NAVEGACIÓN</h2>
-        <ul class="list">
-          <li><a href="../index.html" class="navegacion-enlace">Inicio</a></li>
-          <li><a href="cafeteria.html" class="navegacion-enlace">Cafeteria</a></li>
-          <li><a href="pasteleria.html" class="navegacion-enlace">Pasteleria</a></li>
-          <li><a href="cursosCatas.html" class="navegacion-enlace">Cursos y Catas</a></li>
-          <li><a href="contacto.html" class="navegacion-enlace">Contacto</a></li>
-        </ul>
+          <ul class="list">
+            <li>
+              <a href="../index.html" class="navegacion-enlace">Inicio</a>
+            </li>
+            <li>
+              <a href="cafeteria.html" class="navegacion-enlace">Cafeteria</a>
+            </li>
+            <li>
+              <a href="pasteleria.html" class="navegacion-enlace">Pasteleria</a>
+            </li>
+            <li>
+              <a href="cursosCatas.html" class="navegacion-enlace"
+                >Cursos y Catas</a
+              >
+            </li>
+            <li>
+              <a href="contacto.html" class="navegacion-enlace">Contacto</a>
+            </li>
+          </ul>
         </div>
       </section>
 
       <section>
         <div class="sucursales">
-          <h2> SUCURSALES</h2>
+          <h2>SUCURSALES</h2>
           <p>Av Córdoba 1111</p>
           <p>Tel: 4859672</p>
         </div>
@@ -214,36 +678,45 @@
           <h2>SEGUINOS</h2>
 
           <!--ICONO INSTAGRAM-->
-        <a href="">
-          <svg
-          class="icon"
-          xmlns="http://www.w3.org/2000/svg"
-          width="30"
-          height="30"
-          fill="currentColor"
-          class="bi bi-instagram"
-          viewBox="0 0 16 16">
-          <path
-            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/></svg>
-       
-        </a>
-         <!--ICONO FACEBOOK-->
-        <a href="">
-          <svg
-          class="icon"
-          xmlns="http://www.w3.org/2000/svg"
-          width="30"
-          height="30"
-          fill="currentColor"
-          class="bi bi-facebook"
-          viewBox="0 0 16 16">
-          <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/></svg>
-        </a>
-       
+          <a href="">
+            <svg
+              class="icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="currentColor"
+              class="bi bi-instagram"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+              />
+            </svg>
+          </a>
+          <!--ICONO FACEBOOK-->
+          <a href="">
+            <svg
+              class="icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="currentColor"
+              class="bi bi-facebook"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+              />
+            </svg>
+          </a>
         </div>
       </section>
     </footer>
-     <!--Script boostrap-->
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!--Script boostrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
