@@ -446,7 +446,6 @@ p {
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   color: #4b6246;
-  justify-content: end;
   font-weight: bold;
 }
 
@@ -456,6 +455,8 @@ p {
 }
 
 .modal-body {
+  padding-left: 3rem;
+  padding-right: 3rem;
   font-family: "Roboto", sans-serif;
 }
 .modal-body p {
@@ -463,7 +464,7 @@ p {
   font-size: 1rem;
 }
 .modal-body li {
-  font-size: 2rem;
+  font-size: 1rem;
 }
 .modal-body h2 {
   color: #4b6246;
@@ -473,6 +474,7 @@ p {
 }
 
 .modal-content {
+  padding-right: 3rem;
   background-image: url(../assets/img/coffe_branch_2.png);
   height: auto;
   background-size: cover;

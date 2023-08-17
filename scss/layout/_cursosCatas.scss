@@ -76,7 +76,6 @@
     font-family: $fuenteCuerpo;
     font-size: 1.5rem;
     color: $verde;
-    justify-content: end;
     font-weight: bold;
 }
 
@@ -85,13 +84,15 @@
     font-size: 3rem;
 }
 .modal-body{
+    padding-left: 3rem;
+    padding-right: 3rem;
     font-family: $fuenteCuerpo;
     p{
         text-align: justify;
         font-size: 1rem;
     }
     li{
-        font-size: 2rem;
+        font-size: 1rem;
     }
     h2{
         color: $verde;
@@ -101,6 +102,7 @@
     }
 }
 .modal-content{
+    padding-right: 3rem;
     background-image: url(../assets/img/coffe_branch_2.png);
     height: auto;
     background-size: cover;
