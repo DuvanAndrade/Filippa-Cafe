@@ -95,6 +95,7 @@
 }
 
 .submit {
+  color: $blanco;
     background-color: $cafeSecundario;
     border-color: $cafe;
     border-radius: 5%;
@@ -106,6 +107,7 @@
     &:hover {
     cursor: pointer;
     background-color: $gris;
+    color: $negro;
 }
 
 }

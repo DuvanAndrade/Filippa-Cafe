@@ -341,12 +341,12 @@
 }
 
 @media screen and (min-width: 768px){
-    .container-principal-pasteleria{
-        display: grid;
-        grid-template-columns: 5% 95%;
-    }
+    
     .grilla-productos-pasteleria{
-    grid-template-columns: repeat(3, 30%);  
+    grid-template-columns: repeat(3, 30%);
+    .grilla-producto-pasteleria:hover{
+        transform: scale(1.2);
+    }  
    
 }
 }
@@ -362,9 +362,6 @@
            
     }
     
-    .grilla-producto-pasteleria:hover{
-        transform: scale(1.3);
-    }
 }
 
 

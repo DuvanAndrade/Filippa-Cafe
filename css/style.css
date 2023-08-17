@@ -126,7 +126,7 @@ p {
 
 /*espacios, productos destacados y opiniones  */
 .subtitulos h2 {
-  background-color: #9f7051;
+  background-color: #8A5938;
   font-size: 3rem;
   color: #ffffff;
   text-align: center;
@@ -159,7 +159,7 @@ p {
 
 /*frase */
 .barra {
-  background-color: #9f7051;
+  background-color: #8A5938;
   padding: 2rem;
 }
 
@@ -316,7 +316,7 @@ p {
 }
 .filtro-submit:hover {
   cursor: pointer;
-  background-color: #9f7051;
+  background-color: #8A5938;
 }
 
 .grilla-productos-cafe {
@@ -340,7 +340,8 @@ p {
 }
 
 .submit {
-  background-color: #9f7051;
+  color: #ffffff;
+  background-color: #8A5938;
   border-color: #8c522c;
   border-radius: 5%;
   font-size: 1.3rem;
@@ -351,18 +352,24 @@ p {
 .submit:hover {
   cursor: pointer;
   background-color: #f6f6f4;
+  color: #000000;
 }
 
 .grilla-productos-pasteleria {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   display: grid;
   grid-template-columns: repeat(2, 50%);
   grid-template-rows: auto;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
   margin: 3rem;
 }
 
+.grilla-producto-pasteleria {
+  transform: scale(0.8);
+  transition: 0.3s;
+}
 .grilla-producto-pasteleria p, .grilla-producto-pasteleria input {
   width: 100%;
 }
@@ -373,7 +380,7 @@ p {
   border-radius: 15px;
 }
 .grilla-producto-pasteleria:hover {
-  transform: scale(1.2);
+  transform: scale(1);
 }
 
 /*PAGINA DE CURSOS Y CATAS*/
@@ -439,7 +446,7 @@ p {
   font-family: "League Spartan", sans-serif;
 }
 .curso__submit input {
-  background-color: #9f7051;
+  background-color: #8A5938;
 }
 .curso__submit:hover {
   cursor: pointer;
@@ -799,12 +806,11 @@ p {
   }
 }
 @media screen and (min-width: 768px) {
-  .container-principal-pasteleria {
-    display: grid;
-    grid-template-columns: 5% 95%;
-  }
   .grilla-productos-pasteleria {
     grid-template-columns: repeat(3, 30%);
+  }
+  .grilla-productos-pasteleria .grilla-producto-pasteleria:hover {
+    transform: scale(1.2);
   }
 }
 @media screen and (min-width: 992px) {
@@ -815,9 +821,6 @@ p {
   }
   .grilla-productos-pasteleria {
     grid-template-columns: repeat(4, 20%);
-  }
-  .grilla-producto-pasteleria:hover {
-    transform: scale(1.3);
   }
 }
 
