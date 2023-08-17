@@ -1,11 +1,7 @@
 .bg {
-    display: flex;
+    @include disp-flex;
     background-image: linear-gradient(rgba(0, 0, 0, 0.175),rgba(0, 0, 0, 0.474)),  url(../assets/img/bayas-cafe-1-scaled.png) ;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    justify-content: center;
-    align-items: center;
+    @include bg-config;
     flex-direction: column;
     overflow: hidden;
     padding-top: 1rem;
@@ -79,16 +75,14 @@
   }
   
   .barra__bg {
-    display: grid;
-    justify-content: center;
-    align-items: center;
+    @include disp-grid;
     grid-template-columns: 100%;
     grid-template-rows: auto;
     position: relative;
     width: 100%;
     height: 600px;
     background-image: url(../assets/img/coffe_branch_2.png);
-    background-attachment: fixed;
+    @include bg-config;
   }
   
   .element {

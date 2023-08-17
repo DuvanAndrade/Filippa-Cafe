@@ -13,7 +13,7 @@
   background-color: $gris;
   p{
   font-size: 1.5rem;
-  font-family: $fuenteTitulo;
+  font-family: $fuenteCuerpo;
   text-align: center;
 }
   h2{
@@ -74,11 +74,9 @@
    
 }
 .grilla-productos-cafe{
-    display: grid;
+    @include disp-grid;
     grid-template-columns: repeat(2, 50%);
-    grid-template-rows: auto;
-    justify-content: center;
-    align-items: center;    
+    grid-template-rows: auto; 
     gap: 2rem;
     margin: 4rem;
    
@@ -95,7 +93,7 @@
 }
 
 .submit {
-  color: $blanco;
+    color: $blanco;
     background-color: $cafeSecundario;
     border-color: $cafe;
     border-radius: 5%;

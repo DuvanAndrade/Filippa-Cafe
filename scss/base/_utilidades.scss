@@ -1,0 +1,16 @@
+@mixin disp-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin disp-grid{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin bg-config{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}

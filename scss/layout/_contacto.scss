@@ -1,8 +1,7 @@
 .contacto-bg{
     background-image: url(../assets/img/contacto.png);
+    @include bg-config;
     height: 20rem;
-    background-size: cover;
-    background-repeat: no-repeat;
     margin-left: 2rem;
     margin-right: 2rem;
     margin-top: 2rem;

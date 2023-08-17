@@ -1,6 +1,7 @@
 //BASE
 @import 'base/reset';
 @import 'base/variables';
+@import 'base/utilidades';
 //COMPONENTS
 @import 'components/navbar';
 @import 'components/footer';
@@ -11,4 +12,4 @@
 @import 'layout/pasteleria';
 @import 'layout/cursosCatas';
 @import 'layout/contacto';
-@import 'layout/mediaqueries'
+@import 'layout/mediaqueries';
