@@ -192,13 +192,13 @@ p {
 
 .element3 {
   top: 200px;
-  left: 100px;
+  left: 90px;
   overflow: hidden;
   transform: scale(1);
   transition: 0.5s;
 }
 .element3:hover {
-  transform: scale(1.15);
+  transform: scale(1.1);
 }
 .element3 img {
   width: 100%;
@@ -211,7 +211,7 @@ p {
   background-color: #8c522c;
   padding: 9rem;
   top: 360px;
-  left: 65px;
+  left: 55px;
 }
 
 .style1 {
@@ -582,7 +582,7 @@ p {
   }
   .element3 {
     top: 420px;
-    left: 300px;
+    left: 260px;
   }
   .element2 {
     padding: 12rem;
@@ -620,7 +620,7 @@ p {
   }
   .element3 {
     top: 250px;
-    left: 500px;
+    left: 480px;
   }
   .element2 {
     top: 340px;
@@ -684,8 +684,8 @@ p {
     font-size: 4rem;
   }
   .element3 {
-    top: 200px;
-    left: 930px;
+    top: 230px;
+    left: 900px;
   }
   .element3 img {
     width: 120%;
