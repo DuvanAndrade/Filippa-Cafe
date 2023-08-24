@@ -99,12 +99,12 @@
   
   .element3 {
     top: 200px;
-    left: 100px;
+    left: 90px;
     overflow: hidden;
     transform: scale(1);
     transition: .5s;
     &:hover{
-      transform: scale(1.15);
+      transform: scale(1.1);
     }
     img {
     width: 100%;
@@ -121,7 +121,7 @@
     background-color: $cafe;
     padding: 9rem;
     top: 360px;
-    left: 65px;
+    left: 55px;
   }
   
   .style1{
