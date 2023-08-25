@@ -164,12 +164,11 @@ p {
 }
 
 .barra__bg {
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
-  grid-template-columns: 100%;
-  grid-template-rows: auto;
-  position: relative;
+  flex-direction: column;
+  gap: 3rem;
   width: 100%;
   height: 600px;
   background-image: url(../assets/img/coffe_branch_2.png);
@@ -178,40 +177,23 @@ p {
   background-attachment: fixed;
 }
 
-.element {
-  position: absolute;
-}
-
-.element1 {
-  top: 5px;
-  left: 75px;
-}
 .element1 h2, .element1 p {
   text-align: center;
 }
 
-.element3 {
-  top: 200px;
-  left: 90px;
+.element2 {
   overflow: hidden;
   transform: scale(1);
   transition: 0.5s;
 }
-.element3:hover {
+.element2:hover {
   transform: scale(1.1);
 }
-.element3 img {
+.element2 img {
   width: 100%;
-  height: 300px;
+  height: 250px;
   object-fit: cover;
-  border-radius: 10px;
-}
-
-.element2 {
-  background-color: #8c522c;
-  padding: 9rem;
-  top: 360px;
-  left: 55px;
+  border-radius: 25px;
 }
 
 .style1 {
@@ -254,8 +236,10 @@ p {
 /*CAFE, PASTELERIA,CURSOS Y CATAS, CONTACTO*/
 .titulo {
   color: #4b6246;
+}
+.titulo h1 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 4rem;
   padding: 3rem 3rem 0 3rem;
 }
 
@@ -327,7 +311,8 @@ p {
   align-items: center;
   grid-template-columns: repeat(2, 50%);
   grid-template-rows: auto;
-  gap: 2rem;
+  column-gap: 3rem;
+  row-gap: 5rem;
   margin: 4rem;
 }
 
@@ -357,32 +342,80 @@ p {
   color: #000000;
 }
 
+.container-grilla-pasteleria {
+  width: 100%;
+}
+
 .grilla-productos-pasteleria {
   padding-top: 2rem;
   padding-bottom: 2rem;
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: repeat(2, 50%);
+  grid-template-columns: 1fr;
   grid-template-rows: auto;
   margin: 3rem;
 }
 
-.grilla-producto-pasteleria {
-  transform: scale(0.8);
-  transition: 0.3s;
+.cards-grid {
+  display: flex;
+  grid-gap: 80px;
+  padding-bottom: 60px;
+  justify-content: center;
+  align-items: center;
 }
-.grilla-producto-pasteleria p, .grilla-producto-pasteleria input {
+
+.flip-card {
+  width: 300px;
+  height: 300px;
+  perspective: 2000px;
+}
+
+.flip-card-inner {
+  position: relative;
   width: 100%;
+  height: 100%;
+  box-shadow: 10px 15px 15px #4b6246;
+  border-radius: 28px;
+  transition: all 0.8s cubic-bezier(0.1, 0.22, 0.8, 1.13);
+  transform-style: preserve-3d;
 }
-.grilla-producto-pasteleria img {
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
   width: 100%;
-  object-fit: cover;
-  box-shadow: 10px 10px 20px #4b6246;
-  border-radius: 15px;
+  height: 100%;
+  border-radius: 28px;
+  backface-visibility: hidden;
 }
-.grilla-producto-pasteleria:hover {
-  transform: scale(1);
+
+.flip-card-front {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.flip-card-back {
+  width: 100%;
+  height: 100%;
+  font-size: 1.25rem;
+  display: grid;
+  padding: 2rem;
+  background-color: #B1CFC8;
+  transform: rotateY(180deg);
+  text-align: center;
+}
+.flip-card-back h2 {
+  color: #4b6246;
+  font-family: "League Spartan", sans-serif;
+  font-size: 3rem;
+}
+.flip-card-back p {
+  font-size: 1.5rem;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(-180deg);
 }
 
 /*PAGINA DE CURSOS Y CATAS*/
@@ -568,11 +601,7 @@ p {
     margin-top: 0;
   }
   .barra__bg {
-    height: 800px;
-  }
-  .element1 {
-    top: 55px;
-    left: 200px;
+    height: 700px;
   }
   .element1 h2 {
     font-size: 4.5rem;
@@ -580,14 +609,9 @@ p {
   .element1 p {
     font-size: 2.5rem;
   }
-  .element3 {
-    top: 420px;
-    left: 260px;
-  }
-  .element2 {
-    padding: 12rem;
-    top: 520px;
-    left: 230px;
+  .element2 img {
+    width: 100%;
+    height: 300px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -614,17 +638,11 @@ p {
     height: 300px;
     object-fit: cover;
   }
-  .element1 {
-    top: 255px;
-    left: 30px;
+  .element1 h2 {
+    font-size: 5rem;
   }
-  .element3 {
-    top: 250px;
-    left: 480px;
-  }
-  .element2 {
-    top: 340px;
-    left: 450px;
+  .element1 p {
+    font-size: 3rem;
   }
 }
 @media screen and (min-width: 992px) {
@@ -673,27 +691,18 @@ p {
   .item p {
     font-size: 2rem;
   }
-  .element1 {
-    top: 200px;
-    left: 140px;
+  .barra__bg {
+    flex-direction: row;
+    justify-content: space-evenly;
   }
   .element1 h2 {
-    font-size: 8rem;
+    font-size: 7rem;
   }
   .element1 p {
     font-size: 4rem;
   }
-  .element3 {
-    top: 230px;
-    left: 900px;
-  }
-  .element3 img {
-    width: 120%;
+  .element2 img {
     height: 400px;
-  }
-  .element2 {
-    top: 430px;
-    left: 870px;
   }
 }
 /*CAFETERIA*/
@@ -797,26 +806,31 @@ p {
 /*MEDIA QUERIES PASTELERIA*/
 @media screen and (min-width: 480px) {
   .grilla-productos-pasteleria {
-    grid-template-columns: repeat(3, 30%);
-    gap: 2rem;
+    grid-template-columns: repeat(2, 50%);
+    row-gap: 3rem;
+    column-gap: 2rem;
+  }
+  .flip-card {
+    width: 380px;
+    height: 380px;
+  }
+  .flip-card-back {
+    min-height: 420px;
+    overflow: hidden;
+    box-shadow: 0px 8px 15px #4b6246;
   }
 }
 @media screen and (min-width: 768px) {
-  .grilla-productos-pasteleria {
-    grid-template-columns: repeat(3, 30%);
-  }
-  .grilla-productos-pasteleria .grilla-producto-pasteleria:hover {
-    transform: scale(1.2);
+  .flip-card-back h2 {
+    padding-top: 4rem;
   }
 }
 @media screen and (min-width: 992px) {
-  .container-principal-pasteleria {
-    display: grid;
-    grid-template-columns: 10% 90%;
-    padding-left: 3rem;
-  }
   .grilla-productos-pasteleria {
-    grid-template-columns: repeat(4, 20%);
+    grid-template-columns: repeat(3, 30%);
+  }
+  .flip-card-back {
+    min-height: auto;
   }
 }
 

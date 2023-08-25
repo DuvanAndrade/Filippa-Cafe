@@ -1,27 +1,69 @@
+.container-grilla-pasteleria{
+    width: 100%;
+
+}
 .grilla-productos-pasteleria{
     padding-top: 2rem;
     padding-bottom: 2rem;
     @include disp-grid;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: 1fr;
     grid-template-rows: auto;   
     margin: 3rem;
    
 }
 
-.grilla-producto-pasteleria{
-    transform: scale(0.8);
-    transition: 0.3s;
-    p, input{
+.cards-grid {
+    display: flex;
+    grid-gap: 80px;
+    padding-bottom: 60px;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .flip-card {
+    width: 300px;
+    height: 300px;
+    perspective: 2000px;
+  }
+  .flip-card-inner {
+    position: relative;
     width: 100%;
-}
-    img{
+    height: 100%;
+    box-shadow: 10px 15px 15px $verde;
+    border-radius: 28px;
+    transition: all .8s cubic-bezier(0.1, 0.22, 0.8, 1.13);
+    transform-style: preserve-3d;
+  }
+  .flip-card-front, .flip-card-back {
+    position: absolute;
     width: 100%;
-    object-fit: cover;
-    box-shadow: 10px 10px 20px $verde;
-    border-radius: 15px;
-}
-    &:hover{
-    transform: scale(1);
-}
-}
-
+    height: 100%;
+    border-radius: 28px;
+    backface-visibility: hidden;
+  }
+  .flip-card-front {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .flip-card-back {
+    width: 100%;
+    height: 100%;
+    font-size: 1.25rem;
+    display: grid;
+    padding: 2rem;
+    background-color: #B1CFC8;
+    transform: rotateY(180deg);
+    text-align: center;
+    h2{
+        color: $verde;
+        font-family: $fuenteTitulo;
+        font-size: 3rem;
+    }
+    p{
+       font-size: 1.5rem; 
+    }
+  }
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(-180deg);
+  }
