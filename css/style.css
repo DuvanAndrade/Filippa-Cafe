@@ -71,7 +71,7 @@ p {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 3rem 2rem 2rem 2rem;
+  padding: 2rem 3rem 2rem 3rem;
   position: relative;
   margin-top: 2rem;
 }
@@ -92,21 +92,13 @@ p {
   font-weight: bold;
 }
 
+.iconos-redes {
+  display: flex;
+  gap: 2rem;
+}
+
 .icon {
   color: #4b6246;
-}
-
-.sucursales svg {
-  position: absolute;
-  top: 4rem; /*al expandir la pantallla se va a romper*/
-  left: 33%;
-}
-
-.seguinos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
 }
 
 .bg {
