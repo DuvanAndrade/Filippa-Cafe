@@ -16,16 +16,16 @@
     .frase-principal{
       h1{
         font-size: 5rem;
-    }
+      }
       h2{
         font-size: 2rem;
+      }
     }
-    }
-
-    .subtitulos h2{
-        margin-top: 0;
-    }
-
+    .divider {
+      h2{
+      font-size: 3rem;
+      }
+  }
    
     .barra__bg{
         height: 700px;
@@ -72,11 +72,7 @@
       font-size: 3rem;
   }
   }
-
-    .subtitulos h2{
-        font-size: 4rem;
-    }
-
+        
     .carousel-inner {
       >.item {
         >img {
@@ -136,6 +132,11 @@
         font-size: 5rem;
       }
     }
+    .divider {
+      h2{
+      font-size: 4rem;
+      }
+  }
 
     .opinions{
         flex-direction: row;  

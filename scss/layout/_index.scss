@@ -26,14 +26,61 @@
   
   
   /*espacios, productos destacados y opiniones  */
-  .subtitulos h2 {
-    background-color: $cafeSecundario;
-    font-size: 3rem;
-    color: $blanco;
-    text-align: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+ 
+  .divider {
+    h2{
+    font-size: 2rem;
+    margin: 0;
+    display: flex;
+    &:before,
+    &:after {
+      content: "";
+      flex: 1;
+    }
   }
+}
+  .gradient{
+    h2 {
+      align-items: stretch;
+      height: 2em;
+      line-height: 2em;
+      color: $blanco;
+      background: $cafeSecundario;
+      
+      &:before {
+        background: linear-gradient(to right, $gris, $cafeSecundario);
+      }
+      
+      &:after {
+        background: linear-gradient(to left, $gris, $cafeSecundario);
+      }
+    }
+  }
+
+  .divider-bar {
+    margin: 0;
+    display: flex;
+    &:before,
+    &:after {
+      content: "";
+      flex: 1;
+    }
+  }
+  .gradient-bar{
+      align-items: stretch;
+      height: 2em;
+      line-height: 2em;
+      color: $blanco;
+      background: $cafeSecundario;
+      
+      &:before {
+        background: linear-gradient(to right, $gris, $cafeSecundario);
+      }
+      
+      &:after {
+        background: linear-gradient(to left, $gris, $cafeSecundario);
+      }
+    }
   
   /*ESPACIOS*/
   .carousel-inner {
@@ -69,12 +116,7 @@
   
   
   
-  /*frase */
-  .barra {
-    background-color: $cafeSecundario;
-    padding: 2rem;
-  }
-  
+  /*frase */  
   .barra__bg {
     @include disp-flex;
     flex-direction: column;
@@ -85,7 +127,6 @@
     @include bg-config;
   }
   
-
   .element1 {
     h2, p{
     text-align: center;
