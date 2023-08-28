@@ -200,6 +200,25 @@ p {
   color: #4b6246;
 }
 
+.productos-destacados {
+  padding: 1rem;
+  display: flex;
+  width: 100%;
+  height: 350px;
+  justify-content: center;
+}
+.productos-destacados img {
+  width: 0;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+}
+.productos-destacados img:hover {
+  cursor: crosshair;
+  width: 200px;
+  opacity: 1;
+}
+
 /*OPINIONES DE CLIENTES*/
 .opinions {
   display: flex;
@@ -613,6 +632,14 @@ p {
     width: 100%;
     height: 300px;
   }
+  .productos-destacados {
+    padding: 2rem;
+    height: 440px;
+  }
+  .productos-destacados img:hover {
+    cursor: crosshair;
+    width: 300px;
+  }
 }
 @media screen and (min-width: 768px) {
   .bg {
@@ -638,11 +665,22 @@ p {
     height: 300px;
     object-fit: cover;
   }
+  .carousel-caption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.466);
+    text-align: center;
+  }
   .element1 h2 {
     font-size: 5rem;
   }
   .element1 p {
     font-size: 3rem;
+  }
+  .productos-destacados {
+    padding: 3rem;
+    height: 480px;
   }
 }
 @media screen and (min-width: 992px) {
