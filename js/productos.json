@@ -1,0 +1,125 @@
+[
+    {
+        "id":1,
+        "titulo":"Mogiana Sap Paulo",
+        "imagen":"../assets/img/cafe/opc1.png",
+        "categoria":{
+            "nombre":"grano",
+            "id":"grano"
+            },
+        "peso":250,
+        "precio":2500
+    },
+    {
+        "id":2,
+        "titulo":"Mogiana Sap Paulo",
+        "imagen":"../assets/img/cafe/opc2.png",
+        "categoria":{
+            "nombre":"molido",
+            "id":"molido"
+            },
+        "peso":500,
+        "precio":2500
+    },
+    {
+        "id":3,
+        "titulo":"Sul de Minas",
+        "imagen":"../assets/img/cafe/opc3.png",
+        "categoria":{
+            "nombre":"grano",
+            "id":"grano"
+            },
+        "peso":250,
+        "precio":2500
+    },
+    {
+        "id":4,
+        "titulo":"Mogiana Sap Paulo",
+        "imagen":"../assets/img/cafe/opc2.png",
+        "categoria":{
+            "nombre":"grano",
+            "id":"grano"
+            },
+        "peso":500,
+        "precio":2500
+    },
+    {
+        "id":5,
+        "titulo":"Valle del Cauca",
+        "imagen":"../assets/img/cafe/opc5.png",
+        "categoria":{
+            "nombre":"grano",
+            "id":"grano"
+            },
+        "peso":500,
+        "precio":2500
+    },
+    {
+        "id":6,
+        "titulo":"Valle del Cauca",
+        "imagen":"../assets/img/cafe/opc6.png",
+        "categoria":{
+            "nombre":"molido",
+            "id":"molido"
+            },
+        "peso":250,
+        "precio":2500
+    },
+    {
+        "id":7,
+        "titulo":"Sul de Minas",
+        "imagen":"../assets/img/cafe/opc7.png",
+        "categoria":{
+            "nombre":"molido",
+            "id":"molido"
+            },
+        "peso":500,
+        "precio":2500
+    },
+    {
+        "id":8,
+        "titulo":"Hueguetenago",
+        "imagen":"../assets/img/cafe/opc8.png",
+        "categoria":{
+            "nombre":"molido",
+            "id":"molido"
+            },
+        "peso":250,
+        "precio":2500
+    },
+    {
+        "id":9,
+        "titulo":"Mogiana Sap Paulo",
+        "imagen":"../assets/img/cafe/opc1.png",
+        "categoria":{
+            "nombre":"molido",
+            "id":"molido"
+            },
+        "peso":250,
+        "precio":2500
+    },
+    {
+        "id":10,
+        "titulo":"Tarrazu",
+        "imagen":"../assets/img/cafe/opc9.png",
+        "categoria":{
+            "nombre":"grano",
+            "id":"grano"
+            },
+        "peso":250,
+        "precio":2500
+    },
+    {
+        "id":11,
+        "titulo":"Santander",
+        "imagen":"../assets/img/cafe/opc10.png",
+        "categoria":{
+            "nombre":"molido",
+            "id":"molido"
+            },
+        "peso":500,
+        "precio":2500
+    }
+    
+    
+]
