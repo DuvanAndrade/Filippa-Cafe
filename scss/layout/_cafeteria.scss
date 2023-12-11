@@ -11,109 +11,103 @@
   
 }
 
+.filtro{
+  padding: 4rem 2rem;
+}
+.filtro h2{
+  color: $verde;
+  border-bottom: 1px solid $verde;
+  padding-bottom: 1rem;
+  font-size: 3rem;
+}
+.list_filtro{
+  list-style-type: none;
 
-/*COSAS EN COMUN PAG CAFE Y PASTELERIA*/
+}
+.btn_menu{
+  background-color: $blanco;
+  border: none;
+  font-size: 2rem;
+  font-family: $fuenteCuerpo;
+  transition: 0.3s;
+}
+.btn_menu:hover{
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 2.3rem;
 
-.producto-informacion{
-  background-color: $gris;
-  p{
+}
+
+.contenedor_principal_productos{
+  display: grid;
+  grid-template-columns: 20% 80%; 
+}
+
+.box_productos {
+  display: grid;
+  grid-template-columns: repeat(4, 20%); 
+  gap: 2rem;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 5rem 2rem;
+}
+.box {
+  background-color: $cafe;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.descripcion_producto h2{
+  color: $negro;
+  font-family: $fuenteTitulo;
+  text-align: center;
+  font-size: 2rem;
+  padding-top:1rem;
+}
+.descripcion_producto p{
+  color: $verde;
   font-size: 1.5rem;
   font-family: $fuenteCuerpo;
   text-align: center;
+  font-weight: bold;
 }
-  h2{
-  font-size: 1.5rem;
-  font-family: $fuenteTitulo;
-  text-align: center;
+.btn{
+  width: 90%;
+  padding: 0;
 }
-}
-
-.cantidad-productos {
-  border:  solid $verde;
+.btn button{
   background-color: $gris;
-  color: $verde;
-  font-size: 1.3rem;
-  font-family: $fuenteTitulo;
-  text-align: center;
-  padding: 1rem;
-  appearance: none;
-}
-.sidebar{
-    /*modificar para que me abra una ventana emergente al dar click a filtro*/
-    text-align: center;
-    h2{
-    font-family: $fuenteTitulo;
-    font-size: 2rem;
-    text-align:start;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 2rem;
+  border-radius: 5%;
+  transition: 0.3s;
+  color: $negro;
 }
 
-    p{
-    font-family: $fuenteCuerpo;
-    font-size: 1.5rem;
-    text-align: start;
-}
+.btn:hover button{
+  background-color: $verde;
+  color: $blanco;
 }
 
 
-.list-cafeteria{
-    list-style-type: none;
-    display: grid;
-    gap: 2rem;
-    padding-left: 0;
-    
-}
 
-.filtro-submit{
-    background-color: $blanco;
-    border-color: $negro;
-    border-radius: 5%;
-    font-size: 1.5rem;
-    font-family: $fuenteTitulo;
-    padding: 0.5rem;
-    transition: background-color .3s ease;
-    
-    &:hover {
-    cursor: pointer;
-    background-color: $cafeSecundario;
-}
-   
-}
-.grilla-productos-cafe{
-    @include disp-grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: auto; 
-    column-gap: 3rem;
-    row-gap: 5rem;
-    margin: 4rem;
-   
-}
 
-.grilla-producto-cafe p, input{
-    width: 100%;
-}
 
-.grilla-producto-cafe img{
-    width: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-}
 
-.submit {
-    color: $blanco;
-    background-color: $cafeSecundario;
-    border-color: $cafe;
-    border-radius: 5%;
-    font-size: 1.3rem;
-    font-family: $fuenteTitulo;
-    padding: 1rem;
-    transition: background-color .5s ease;
-    
-    &:hover {
-    cursor: pointer;
-    background-color: $gris;
-    color: $negro;
-}
 
-}
+
+
+
+
+
+
 
 

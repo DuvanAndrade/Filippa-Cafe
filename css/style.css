@@ -57,6 +57,85 @@ p {
   background-color: #f6f6f4;
 }
 
+.myBtnCart {
+  color: #4b6246;
+  border: none;
+}
+.myBtnCart svg {
+  width: 3rem;
+}
+
+.closeCart {
+  color: #000000;
+  float: unset;
+  font-size: 28px;
+  font-weight: bold;
+  padding-left: 1rem;
+}
+.closeCart:hover {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.closeCart:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.titulo_cart {
+  text-align: center;
+  font-family: "League Spartan", sans-serif;
+  padding-top: 2rem;
+}
+
+.grilla_productos_cart {
+  padding-top: 2rem;
+}
+
+.box_cart {
+  width: 100%;
+  height: 70%;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.box_cart img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.modal_content_cart {
+  background-color: #ffffff;
+  margin: auto;
+  border: 1px solid #4b6246;
+  width: 50%;
+  column-gap: 2rem;
+}
+
+.contenedor-carrito {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  padding: 2rem;
+}
+
+.total_cart {
+  font-size: 2rem;
+  padding-right: 4rem;
+  text-align: end;
+}
+
+.modal {
+  display: none;
+  z-index: 1;
+  padding-top: 100px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
 /*FOOTER*/
 .list {
   list-style-type: none;
@@ -298,103 +377,96 @@ p {
   padding: 3rem 3rem 0 3rem;
 }
 
-/*COSAS EN COMUN PAG CAFE Y PASTELERIA*/
-.producto-informacion {
-  background-color: #f6f6f4;
-}
-.producto-informacion p {
-  font-size: 1.5rem;
-  font-family: "Roboto", sans-serif;
-  text-align: center;
-}
-.producto-informacion h2 {
-  font-size: 1.5rem;
-  font-family: "League Spartan", sans-serif;
-  text-align: center;
+.filtro {
+  padding: 4rem 2rem;
 }
 
-.cantidad-productos {
-  border: solid #4b6246;
-  background-color: #f6f6f4;
+.filtro h2 {
   color: #4b6246;
-  font-size: 1.3rem;
-  font-family: "League Spartan", sans-serif;
-  text-align: center;
-  padding: 1rem;
-  appearance: none;
+  border-bottom: 1px solid #4b6246;
+  padding-bottom: 1rem;
+  font-size: 3rem;
 }
 
-.sidebar {
-  /*modificar para que me abra una ventana emergente al dar click a filtro*/
-  text-align: center;
-}
-.sidebar h2 {
-  font-family: "League Spartan", sans-serif;
-  font-size: 2rem;
-  text-align: start;
-}
-.sidebar p {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
-  text-align: start;
-}
-
-.list-cafeteria {
+.list_filtro {
   list-style-type: none;
-  display: grid;
-  gap: 2rem;
-  padding-left: 0;
 }
 
-.filtro-submit {
+.btn_menu {
   background-color: #ffffff;
-  border-color: #000000;
-  border-radius: 5%;
-  font-size: 1.5rem;
-  font-family: "League Spartan", sans-serif;
-  padding: 0.5rem;
-  transition: background-color 0.3s ease;
-}
-.filtro-submit:hover {
-  cursor: pointer;
-  background-color: #8A5938;
+  border: none;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  transition: 0.3s;
 }
 
-.grilla-productos-cafe {
+.btn_menu:hover {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 2.3rem;
+}
+
+.contenedor_principal_productos {
   display: grid;
-  justify-content: center;
+  grid-template-columns: 20% 80%;
+}
+
+.box_productos {
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  gap: 2rem;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   align-items: center;
-  grid-template-columns: repeat(2, 50%);
-  grid-template-rows: auto;
-  column-gap: 3rem;
-  row-gap: 5rem;
-  margin: 4rem;
+  padding: 5rem 2rem;
 }
 
-.grilla-producto-cafe p, input {
-  width: 100%;
+.box {
+  background-color: #8c522c;
+  border-radius: 1rem;
+  overflow: hidden;
 }
 
-.grilla-producto-cafe img {
+.box img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
-  border-radius: 10px;
 }
 
-.submit, .curso__submit {
-  color: #ffffff;
-  background-color: #8A5938;
-  border-color: #8c522c;
-  border-radius: 5%;
-  font-size: 1.3rem;
-  font-family: "League Spartan", sans-serif;
-  padding: 1rem;
-  transition: background-color 0.5s ease;
-}
-.submit:hover, .curso__submit:hover {
-  cursor: pointer;
-  background-color: #f6f6f4;
+.descripcion_producto h2 {
   color: #000000;
+  font-family: "League Spartan", sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+
+.descripcion_producto p {
+  color: #4b6246;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+.btn {
+  width: 90%;
+  padding: 0;
+}
+
+.btn button {
+  background-color: #f6f6f4;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 2rem;
+  border-radius: 5%;
+  transition: 0.3s;
+  color: #000000;
+}
+
+.btn:hover button {
+  background-color: #4b6246;
+  color: #ffffff;
 }
 
 .container-grilla-pasteleria {
